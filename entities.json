@@ -646,6 +646,196 @@
       "id": 113,
       "name": "Eternal life",
       "categoryId": 3
+    },
+    {
+      "id": 114,
+      "name": "To faith in Christ",
+      "categoryId": 4
+    },
+    {
+      "id": 115,
+      "name": "Confessing Christ",
+      "categoryId": 4
+    },
+    {
+      "id": 116,
+      "name": "To repentance",
+      "categoryId": 4
+    },
+    {
+      "id": 117,
+      "name": "To them that mourn for the wickedness of the land",
+      "categoryId": 4
+    },
+    {
+      "id": 118,
+      "name": "Repenting in affliction",
+      "categoryId": 4
+    },
+    {
+      "id": 119,
+      "name": "Confession of sin",
+      "categoryId": 4
+    },
+    {
+      "id": 120,
+      "name": "Obedience",
+      "categoryId": 4
+    },
+    {
+      "id": 121,
+      "name": "Obeying Christ",
+      "categoryId": 4
+    },
+    {
+      "id": 122,
+      "name": "To sincerity and uprightness",
+      "categoryId": 4
+    },
+    {
+      "id": 123,
+      "name": "To the love of God",
+      "categoryId": 4
+    },
+    {
+      "id": 124,
+      "name": "To the love of Christ",
+      "categoryId": 4
+    },
+    {
+      "id": 125,
+      "name": "To trusting and patiently waiting on God",
+      "categoryId": 4
+    },
+    {
+      "id": 126,
+      "name": "To the fear of God",
+      "categoryId": 4
+    },
+    {
+      "id": 127,
+      "name": "Honoring God",
+      "categoryId": 4
+    },
+    {
+      "id": 128,
+      "name": "To prayer",
+      "categoryId": 4
+    },
+    {
+      "id": 129,
+      "name": "Seeking God",
+      "categoryId": 4
+    },
+    {
+      "id": 130,
+      "name": "Secret prayer",
+      "categoryId": 4
+    },
+    {
+      "id": 131,
+      "name": "Praising God",
+      "categoryId": 4
+    },
+    {
+      "id": 132,
+      "name": "Desires of grace",
+      "categoryId": 4
+    },
+    {
+      "id": 133,
+      "name": "To the wise",
+      "categoryId": 4
+    },
+    {
+      "id": 134,
+      "name": "Love and study of wisdom",
+      "categoryId": 4
+    },
+    {
+      "id": 135,
+      "name": "Knowledge of God and Christ",
+      "categoryId": 4
+    },
+    {
+      "id": 136,
+      "name": "Learning of Christ",
+      "categoryId": 4
+    },
+    {
+      "id": 137,
+      "name": "To a due regard to the Word of God: To hearing and reading the Word",
+      "categoryId": 4
+    },
+    {
+      "id": 138,
+      "name": "To a due regard to the Word of God: Loving the Word",
+      "categoryId": 4
+    },
+    {
+      "id": 139,
+      "name": "To a due regard to the Word of God: Trembling at the Word",
+      "categoryId": 4
+    },
+    {
+      "id": 140,
+      "name": "Meditation",
+      "categoryId": 4
+    },
+    {
+      "id": 141,
+      "name": "To fasting",
+      "categoryId": 4
+    },
+    {
+      "id": 142,
+      "name": "Fasting in secret",
+      "categoryId": 4
+    },
+    {
+      "id": 143,
+      "name": "To baptism",
+      "categoryId": 4
+    },
+    {
+      "id": 144,
+      "name": "To the Lord's Supper",
+      "categoryId": 4
+    },
+    {
+      "id": 145,
+      "name": "To good discourse",
+      "categoryId": 4
+    },
+    {
+      "id": 146,
+      "name": "The government of the tongue",
+      "categoryId": 4
+    },
+    {
+      "id": 147,
+      "name": "To watchfulness",
+      "categoryId": 4
+    },
+    {
+      "id": 148,
+      "name": "To keeping good company",
+      "categoryId": 4
+    },
+    {
+      "id": 149,
+      "name": "Avoiding evil company",
+      "categoryId": 4
+    },
+    {
+      "id": 150,
+      "name": "To performing oaths",
+      "categoryId": 4
+    },
+    {
+      "id": 151,
+      "name": "To the keeping of the Sabbath",
+      "categoryId": 4
     }
   ]
 }

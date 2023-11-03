@@ -1066,6 +1066,16 @@
       "id": 197,
       "name": "The conversion and restoration of the Jews",
       "categoryId": 7
+    },
+    {
+      "id": 198,
+      "name": "That Christ will come again",
+      "categoryId": 8
+    },
+    {
+      "id": 199,
+      "name": "That God will perform all his promises",
+      "categoryId": 9
     }
   ]
 }

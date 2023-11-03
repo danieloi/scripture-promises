@@ -1,4 +1,27 @@
 {
+  "levels": [
+    {
+      "id": 0,
+      "name": "Super Category",
+      "description": "Super Category",
+      "parentId": null,
+      "depth": 0
+    },
+    {
+      "id": 1,
+      "name": "Category",
+      "description": "Category",
+      "parentId": 0,
+      "depth": 1
+    },
+    {
+      "id": 2,
+      "name": "Sub Category",
+      "description": "Sub Category",
+      "parentId": 1,
+      "depth": 2
+    }
+  ],
   "superCategories": [
     {
       "id": 0,

@@ -1,0 +1,51 @@
+{
+  "superCategories": [
+    {
+      "id": 0,
+      "name": "blessings promised to believers"
+    },
+    {
+      "id": 1,
+      "name": "promises for the exercise of duties and glories"
+    },
+    {
+      "id": 2,
+      "name": "promises of the growth and glory of the church"
+    },
+    {
+      "id": 3,
+      "name": "promises of christ's second coming"
+    },
+    {
+      "id": 4,
+      "name": "conclusion"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "promises of temporal blessings",
+      "superCategoryId": 0
+    },
+    {
+      "id": 1,
+      "name": "promises related to the troubles of life",
+      "superCategoryId": 0
+    },
+    {
+      "id": 2,
+      "name": "promises of spiritual blessings in this life",
+      "superCategoryId": 0
+    },
+    {
+      "id": 3,
+      "name": "promises of blessings in the future world",
+      "superCategoryId": 0
+    },
+    {
+      "id": 4,
+      "name": "in fulfillment of duty toward God",
+      "superCategoryId": 1
+    }
+  ]
+}

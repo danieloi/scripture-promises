@@ -1011,6 +1011,61 @@
       "id": 186,
       "name": "To him that overcomes",
       "categoryId": 6
+    },
+    {
+      "id": 187,
+      "name": "The enlargement of the church, and the spread of the Gospel and Kingdom of Christ",
+      "categoryId": 7
+    },
+    {
+      "id": 188,
+      "name": "Glory of the church",
+      "categoryId": 7
+    },
+    {
+      "id": 189,
+      "name": "Increase of light and knowledge, and the means of grace",
+      "categoryId": 7
+    },
+    {
+      "id": 190,
+      "name": "Increase of purity, holiness, and righteousness",
+      "categoryId": 7
+    },
+    {
+      "id": 191,
+      "name": "Peace, love, and unity",
+      "categoryId": 7
+    },
+    {
+      "id": 192,
+      "name": "Submission and destruction of the enemies of the church",
+      "categoryId": 7
+    },
+    {
+      "id": 193,
+      "name": "The destruction of Antichrist, Babylon, etc.",
+      "categoryId": 7
+    },
+    {
+      "id": 194,
+      "name": "Favor and submission of kings to the Kingdom of Christ",
+      "categoryId": 7
+    },
+    {
+      "id": 195,
+      "name": "The security, tranquility, and prosperity of the church",
+      "categoryId": 7
+    },
+    {
+      "id": 196,
+      "name": "The perpetual continuance of the church",
+      "categoryId": 7
+    },
+    {
+      "id": 197,
+      "name": "The conversion and restoration of the Jews",
+      "categoryId": 7
     }
   ]
 }

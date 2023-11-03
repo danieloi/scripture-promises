@@ -46,6 +46,34 @@
       "id": 4,
       "name": "In Fulfillment of Duty Toward God",
       "superCategoryId": 1
+    },
+    {
+      "id": 5,
+      "name": "In the Performance of Duty Toward Men",
+      "superCategoryId": 1
+    },
+    {
+      "id": 6,
+      "name": "In the Cultivation of Christian Character",
+      "superCategoryId": 1
+    },
+    {
+      "id": 7,
+      "name": "Promises of the Growth and Glory of the Church",
+      "superCategoryId": 2,
+      "placeholder": true
+    },
+    {
+      "id": 8,
+      "name": "Promises of Christ's Second Coming",
+      "superCategoryId": 3,
+      "placeholder": true
+    },
+    {
+      "id": 9,
+      "name": "Conclusion",
+      "superCategoryId": 4,
+      "placeholder": true
     }
   ]
 }

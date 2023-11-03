@@ -251,6 +251,346 @@
       "id": 34,
       "name": "Deliverance from death",
       "categoryId": 1
+    },
+    {
+      "id": 35,
+      "name": "In general",
+      "categoryId": 2
+    },
+    {
+      "id": 36,
+      "name": "Justification",
+      "categoryId": 2
+    },
+    {
+      "id": 37,
+      "name": "Pardon of sin",
+      "categoryId": 2
+    },
+    {
+      "id": 38,
+      "name": "Of the most heinous sins",
+      "categoryId": 2
+    },
+    {
+      "id": 39,
+      "name": "Of all sins",
+      "categoryId": 2
+    },
+    {
+      "id": 40,
+      "name": "Of backsliding",
+      "categoryId": 2
+    },
+    {
+      "id": 41,
+      "name": "Pardon through Christ Reconciliation",
+      "categoryId": 2
+    },
+    {
+      "id": 42,
+      "name": "Adoption",
+      "categoryId": 2
+    },
+    {
+      "id": 43,
+      "name": "Union and communion with the church",
+      "categoryId": 2
+    },
+    {
+      "id": 44,
+      "name": "Free access to God, with acceptance",
+      "categoryId": 2
+    },
+    {
+      "id": 45,
+      "name": "Of hearing prayer",
+      "categoryId": 2
+    },
+    {
+      "id": 46,
+      "name": "Sanctifying grace in general",
+      "categoryId": 2
+    },
+    {
+      "id": 47,
+      "name": "Of converting grace",
+      "categoryId": 2
+    },
+    {
+      "id": 48,
+      "name": "The grace of repentance",
+      "categoryId": 2
+    },
+    {
+      "id": 49,
+      "name": "The grace of faith",
+      "categoryId": 2
+    },
+    {
+      "id": 50,
+      "name": "Grace to fear God",
+      "categoryId": 2
+    },
+    {
+      "id": 51,
+      "name": "Knowledge",
+      "categoryId": 2
+    },
+    {
+      "id": 52,
+      "name": "Wisdom",
+      "categoryId": 2
+    },
+    {
+      "id": 53,
+      "name": "Divine teaching",
+      "categoryId": 2
+    },
+    {
+      "id": 54,
+      "name": "Divine guidance",
+      "categoryId": 2
+    },
+    {
+      "id": 55,
+      "name": "Ability for good discourse",
+      "categoryId": 2
+    },
+    {
+      "id": 56,
+      "name": "The means of grace",
+      "categoryId": 2
+    },
+    {
+      "id": 57,
+      "name": "A blessing upon ordinances",
+      "categoryId": 2
+    },
+    {
+      "id": 58,
+      "name": "To mortify sin",
+      "categoryId": 2
+    },
+    {
+      "id": 59,
+      "name": "Against temptation",
+      "categoryId": 2
+    },
+    {
+      "id": 60,
+      "name": "From the enticement of sinners",
+      "categoryId": 2
+    },
+    {
+      "id": 61,
+      "name": "Victory over the world",
+      "categoryId": 2
+    },
+    {
+      "id": 62,
+      "name": "Victory over the devil",
+      "categoryId": 2
+    },
+    {
+      "id": 63,
+      "name": "Strength, courage, and resolution",
+      "categoryId": 2
+    },
+    {
+      "id": 64,
+      "name": "Fruitfulness",
+      "categoryId": 2
+    },
+    {
+      "id": 65,
+      "name": "In old age",
+      "categoryId": 2
+    },
+    {
+      "id": 66,
+      "name": "Increase of grace",
+      "categoryId": 2
+    },
+    {
+      "id": 67,
+      "name": "The grace of meekness",
+      "categoryId": 2
+    },
+    {
+      "id": 68,
+      "name": "Grace to persevere",
+      "categoryId": 2
+    },
+    {
+      "id": 69,
+      "name": "Sanctified afflictions",
+      "categoryId": 2
+    },
+    {
+      "id": 70,
+      "name": "Grace to the children of Israel",
+      "categoryId": 2
+    },
+    {
+      "id": 71,
+      "name": "God our God",
+      "categoryId": 2
+    },
+    {
+      "id": 72,
+      "name": "God Our portion",
+      "categoryId": 2
+    },
+    {
+      "id": 73,
+      "name": "God Our glory",
+      "categoryId": 2
+    },
+    {
+      "id": 74,
+      "name": "His presence with us",
+      "categoryId": 2
+    },
+    {
+      "id": 75,
+      "name": "His love",
+      "categoryId": 2
+    },
+    {
+      "id": 76,
+      "name": "His mercy",
+      "categoryId": 2
+    },
+    {
+      "id": 77,
+      "name": "His help",
+      "categoryId": 2
+    },
+    {
+      "id": 78,
+      "name": "His care",
+      "categoryId": 2
+    },
+    {
+      "id": 79,
+      "name": "His covenant with his people",
+      "categoryId": 2
+    },
+    {
+      "id": 80,
+      "name": "God will not forsake them",
+      "categoryId": 2
+    },
+    {
+      "id": 81,
+      "name": "An interest in Christ",
+      "categoryId": 2
+    },
+    {
+      "id": 82,
+      "name": "All grace from Christ",
+      "categoryId": 2
+    },
+    {
+      "id": 83,
+      "name": "Redemption by Christ",
+      "categoryId": 2
+    },
+    {
+      "id": 84,
+      "name": "Life from Him",
+      "categoryId": 2
+    },
+    {
+      "id": 85,
+      "name": "His intercession",
+      "categoryId": 2
+    },
+    {
+      "id": 86,
+      "name": "His love",
+      "categoryId": 2
+    },
+    {
+      "id": 87,
+      "name": "His care of his church",
+      "categoryId": 2
+    },
+    {
+      "id": 88,
+      "name": "His presence with his people",
+      "categoryId": 2
+    },
+    {
+      "id": 89,
+      "name": "Promises of the Spirit",
+      "categoryId": 2
+    },
+    {
+      "id": 90,
+      "name": "His teaching",
+      "categoryId": 2
+    },
+    {
+      "id": 91,
+      "name": "Help in prayer",
+      "categoryId": 2
+    },
+    {
+      "id": 92,
+      "name": "To witness our adoption",
+      "categoryId": 2
+    },
+    {
+      "id": 93,
+      "name": "To seal our redemption",
+      "categoryId": 2
+    },
+    {
+      "id": 94,
+      "name": "To be our comforter",
+      "categoryId": 2
+    },
+    {
+      "id": 95,
+      "name": "The joys of the Holy Ghost",
+      "categoryId": 2
+    },
+    {
+      "id": 96,
+      "name": "The ministry of angels",
+      "categoryId": 2
+    },
+    {
+      "id": 97,
+      "name": "That we shall be kings and priests unto God",
+      "categoryId": 2
+    },
+    {
+      "id": 98,
+      "name": "Peace of conscience",
+      "categoryId": 2
+    },
+    {
+      "id": 99,
+      "name": "Comfort",
+      "categoryId": 2
+    },
+    {
+      "id": 100,
+      "name": "Hope",
+      "categoryId": 2
+    },
+    {
+      "id": 101,
+      "name": "Delight and joy in God",
+      "categoryId": 2
+    },
+    {
+      "id": 102,
+      "name": "Support in death",
+      "categoryId": 2
     }
   ]
 }

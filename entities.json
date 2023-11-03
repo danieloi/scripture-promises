@@ -2,49 +2,49 @@
   "superCategories": [
     {
       "id": 0,
-      "name": "blessings promised to believers"
+      "name": "Blessings Promised to Believers"
     },
     {
       "id": 1,
-      "name": "promises for the exercise of duties and glories"
+      "name": "Promises for the Exercise of Duties and Glories"
     },
     {
       "id": 2,
-      "name": "promises of the growth and glory of the church"
+      "name": "Promises of the Growth and Glory of the Church"
     },
     {
       "id": 3,
-      "name": "promises of christ's second coming"
+      "name": "Promises of Christ's Second Coming"
     },
     {
       "id": 4,
-      "name": "conclusion"
+      "name": "Conclusion"
     }
   ],
   "categories": [
     {
       "id": 0,
-      "name": "promises of temporal blessings",
+      "name": "Promises of Temporal Blessings",
       "superCategoryId": 0
     },
     {
       "id": 1,
-      "name": "promises related to the troubles of life",
+      "name": "Promises Related to the Troubles of Life",
       "superCategoryId": 0
     },
     {
       "id": 2,
-      "name": "promises of spiritual blessings in this life",
+      "name": "Promises of Spiritual Blessings in This Life",
       "superCategoryId": 0
     },
     {
       "id": 3,
-      "name": "promises of blessings in the future world",
+      "name": "Promises of Blessings in the Future World",
       "superCategoryId": 0
     },
     {
       "id": 4,
-      "name": "in fulfillment of duty toward God",
+      "name": "In Fulfillment of Duty Toward God",
       "superCategoryId": 1
     }
   ]

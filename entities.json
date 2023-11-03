@@ -591,6 +591,61 @@
       "id": 102,
       "name": "Support in death",
       "categoryId": 2
+    },
+    {
+      "id": 103,
+      "name": "Deliverance from hell",
+      "categoryId": 3
+    },
+    {
+      "id": 104,
+      "name": "Happiness immediately after death",
+      "categoryId": 3
+    },
+    {
+      "id": 105,
+      "name": "A glorious resurrection",
+      "categoryId": 3
+    },
+    {
+      "id": 106,
+      "name": "Everlasting happiness in heaven",
+      "categoryId": 3
+    },
+    {
+      "id": 107,
+      "name": "Freedom from all sorrow in heaven",
+      "categoryId": 3
+    },
+    {
+      "id": 108,
+      "name": "Joy in heaven",
+      "categoryId": 3
+    },
+    {
+      "id": 109,
+      "name": "Glory in heaven",
+      "categoryId": 3
+    },
+    {
+      "id": 110,
+      "name": "The kingdom of heaven",
+      "categoryId": 3
+    },
+    {
+      "id": 111,
+      "name": "The heavenly inheritance",
+      "categoryId": 3
+    },
+    {
+      "id": 112,
+      "name": "Enjoyment of God",
+      "categoryId": 3
+    },
+    {
+      "id": 113,
+      "name": "Eternal life",
+      "categoryId": 3
     }
   ]
 }

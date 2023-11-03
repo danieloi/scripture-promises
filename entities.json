@@ -156,6 +156,101 @@
       "id": 15,
       "name": "A blessing upon the families of the Good",
       "categoryId": 0
+    },
+    {
+      "id": 17,
+      "name": "Preservation from trouble",
+      "categoryId": 1
+    },
+    {
+      "id": 18,
+      "name": "Deliverance from trouble",
+      "categoryId": 1
+    },
+    {
+      "id": 19,
+      "name": "Support in trouble",
+      "categoryId": 1
+    },
+    {
+      "id": 21,
+      "name": "Deliverance from sickness",
+      "categoryId": 1
+    },
+    {
+      "id": 22,
+      "name": "Support in sickness",
+      "categoryId": 1
+    },
+    {
+      "id": 23,
+      "name": "In old age",
+      "categoryId": 1
+    },
+    {
+      "id": 24,
+      "name": "Deliverance from famine and want",
+      "categoryId": 1
+    },
+    {
+      "id": 26,
+      "name": "From war",
+      "categoryId": 1
+    },
+    {
+      "id": 27,
+      "name": "From enemies",
+      "categoryId": 1
+    },
+    {
+      "id": 28,
+      "name": "From oppression and injustice",
+      "categoryId": 1
+    },
+    {
+      "id": 30,
+      "name": "Slander",
+      "categoryId": 1
+    },
+    {
+      "id": 31,
+      "name": "Reproach",
+      "categoryId": 1
+    },
+    {
+      "id": 32,
+      "name": "From witchcraft",
+      "categoryId": 1
+    },
+    {
+      "id": 33,
+      "name": "Promises to the stranger and exile",
+      "categoryId": 1
+    },
+    {
+      "id": 34,
+      "name": "To the poor and helpless",
+      "categoryId": 1
+    },
+    {
+      "id": 35,
+      "name": "To the fatherless and widow",
+      "categoryId": 1
+    },
+    {
+      "id": 36,
+      "name": "To the childless",
+      "categoryId": 1
+    },
+    {
+      "id": 37,
+      "name": "To the prisoner and captive",
+      "categoryId": 1
+    },
+    {
+      "id": 38,
+      "name": "Deliverance from death",
+      "categoryId": 1
     }
   ]
 }

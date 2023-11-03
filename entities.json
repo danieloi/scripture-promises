@@ -75,5 +75,87 @@
       "superCategoryId": 4,
       "placeholder": true
     }
+  ],
+  "subCategories": [
+    {
+      "id": 0,
+      "name": "General promises to believers",
+      "categoryId": 0
+    },
+    {
+      "id": 1,
+      "name": "Temporal blessings in general",
+      "categoryId": 0
+    },
+    {
+      "id": 2,
+      "name": "Food",
+      "categoryId": 0
+    },
+    {
+      "id": 3,
+      "name": "Raiment",
+      "categoryId": 0
+    },
+    {
+      "id": 4,
+      "name": "Long life",
+      "categoryId": 0
+    },
+    {
+      "id": 5,
+      "name": "Health",
+      "categoryId": 0
+    },
+    {
+      "id": 6,
+      "name": "Safety under the divine protection",
+      "categoryId": 0
+    },
+    {
+      "id": 7,
+      "name": "Promises of peace",
+      "categoryId": 0
+    },
+    {
+      "id": 8,
+      "name": "Direction",
+      "categoryId": 0
+    },
+    {
+      "id": 9,
+      "name": "Honor",
+      "categoryId": 0
+    },
+    {
+      "id": 10,
+      "name": "Success and prosperity",
+      "categoryId": 0
+    },
+    {
+      "id": 11,
+      "name": "Plenty and riches",
+      "categoryId": 0
+    },
+    {
+      "id": 12,
+      "name": "Of children",
+      "categoryId": 0
+    },
+    {
+      "id": 13,
+      "name": "A blessing upon all the believer has",
+      "categoryId": 0
+    },
+    {
+      "id": 14,
+      "name": "A blessing upon the children of believers",
+      "categoryId": 0
+    },
+    {
+      "id": 15,
+      "name": "A blessing upon the families of the Good",
+      "categoryId": 0
+    }
   ]
 }

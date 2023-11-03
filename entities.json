@@ -971,6 +971,46 @@
       "id": 178,
       "name": "To the spiritually-minded",
       "categoryId": 5
+    },
+    {
+      "id": 179,
+      "name": "The meek",
+      "categoryId": 6
+    },
+    {
+      "id": 180,
+      "name": "To the humble",
+      "categoryId": 6
+    },
+    {
+      "id": 181,
+      "name": "The contrite and mourners",
+      "categoryId": 6
+    },
+    {
+      "id": 182,
+      "name": "To them that suffer for righteousness' sake",
+      "categoryId": 6
+    },
+    {
+      "id": 183,
+      "name": "To them that are excommunicated unjustly",
+      "categoryId": 6
+    },
+    {
+      "id": 184,
+      "name": "To patience and submission",
+      "categoryId": 6
+    },
+    {
+      "id": 185,
+      "name": "To perseverance",
+      "categoryId": 6
+    },
+    {
+      "id": 186,
+      "name": "To him that overcomes",
+      "categoryId": 6
     }
   ]
 }

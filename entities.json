@@ -836,6 +836,141 @@
       "id": 151,
       "name": "To the keeping of the Sabbath",
       "categoryId": 4
+    },
+    {
+      "id": 152,
+      "name": "To obedience to parents",
+      "categoryId": 5
+    },
+    {
+      "id": 153,
+      "name": "To good education",
+      "categoryId": 5
+    },
+    {
+      "id": 154,
+      "name": "Correction of children",
+      "categoryId": 5
+    },
+    {
+      "id": 155,
+      "name": "To a good wife",
+      "categoryId": 5
+    },
+    {
+      "id": 156,
+      "name": "To faithful servants",
+      "categoryId": 5
+    },
+    {
+      "id": 157,
+      "name": "To good kings and magistrates",
+      "categoryId": 5
+    },
+    {
+      "id": 158,
+      "name": "To obedient subjects",
+      "categoryId": 5
+    },
+    {
+      "id": 159,
+      "name": "To faithful ministers",
+      "categoryId": 5
+    },
+    {
+      "id": 160,
+      "name": "To them that receive and hearken to ministers",
+      "categoryId": 5
+    },
+    {
+      "id": 161,
+      "name": "To love and unity",
+      "categoryId": 5
+    },
+    {
+      "id": 162,
+      "name": "To the peacemakers",
+      "categoryId": 5
+    },
+    {
+      "id": 163,
+      "name": "Love to God's people",
+      "categoryId": 5
+    },
+    {
+      "id": 164,
+      "name": "To the charitable, the merciful and the liberal to God's ministers To alms in secret",
+      "categoryId": 5
+    },
+    {
+      "id": 165,
+      "name": "To the supporting of God's ministers and worship",
+      "categoryId": 5
+    },
+    {
+      "id": 166,
+      "name": "To the merciful",
+      "categoryId": 5
+    },
+    {
+      "id": 167,
+      "name": "To the giving and the receiving of reproofs",
+      "categoryId": 5
+    },
+    {
+      "id": 168,
+      "name": "To forgiving injuries",
+      "categoryId": 5
+    },
+    {
+      "id": 169,
+      "name": "To chastity and purity",
+      "categoryId": 5
+    },
+    {
+      "id": 170,
+      "name": "To diligence",
+      "categoryId": 5
+    },
+    {
+      "id": 171,
+      "name": "To improving our talents",
+      "categoryId": 5
+    },
+    {
+      "id": 172,
+      "name": "Moderation in sleep",
+      "categoryId": 5
+    },
+    {
+      "id": 173,
+      "name": "To the just and honest",
+      "categoryId": 5
+    },
+    {
+      "id": 174,
+      "name": "To truth",
+      "categoryId": 5
+    },
+    {
+      "id": 175,
+      "name": "To candor",
+      "categoryId": 5
+    },
+    {
+      "id": 176,
+      "name": "Contentment",
+      "categoryId": 5
+    },
+    {
+      "id": 177,
+      "name": "Mortification of sin",
+      "categoryId": 5
+    },
+    {
+      "id": 178,
+      "name": "To the spiritually-minded",
+      "categoryId": 5
     }
   ]
 }

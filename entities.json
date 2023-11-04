@@ -3,23 +3,38 @@
     {
       "id": 0,
       "name": "Super Category",
-      "description": "Super Category",
+      "description": "There are 5 of these in the book",
       "parentId": null,
-      "depth": 0
+      "depth": 0,
+      "jsonKey": "superCategories",
+      "slug": "super-category"
     },
     {
       "id": 1,
       "name": "Category",
-      "description": "Category",
+      "description": "There are 10 of these in the book.",
       "parentId": 0,
-      "depth": 1
+      "depth": 1,
+      "jsonKey": "categories",
+      "slug": "category"
     },
     {
       "id": 2,
       "name": "Sub Category",
-      "description": "Sub Category",
+      "description": "There are 200 of these in the book.",
       "parentId": 1,
-      "depth": 2
+      "depth": 2,
+      "jsonKey": "subCategories",
+      "slug": "sub-category"
+    },
+    {
+      "id": 3,
+      "name": "Promise",
+      "description": "There are a lot of these in the book.",
+      "parentId": 2,
+      "depth": 3,
+      "jsonKey": "promises",
+      "slug": "promise"
     }
   ],
   "superCategories": [

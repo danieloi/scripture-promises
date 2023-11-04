@@ -1115,5 +1115,109 @@
       "name": "That God will perform all his promises",
       "categoryId": 9
     }
+  ],
+  "promises": [
+    {
+      "id": 0,
+      "quote": "The LORD God is a sun and shield: the LORD will give grace and glory: no good thing will he withhold from them that walk uprightly",
+      "reference": "Psalm 84:11",
+      "subCategoryId": 0
+    },
+    {
+      "id": 1,
+      "quote": "The lines are fallen unto me in pleasant places; yea, I have a goodly heritage",
+      "reference": "Psalm 16:6",
+      "subCategoryId": 0
+    },
+    {
+      "id": 2,
+      "quote": "Surely I know that it shall be well with them that fear God, which fear before him",
+      "reference": "Ecclesiastes 8:12",
+      "subCategoryId": 0
+    },
+    {
+      "id": 3,
+      "quote": "Say ye to the righteous, that it shall be well with him: for they shall eat the fruit of their doings",
+      "reference": "Isaiah 3:10",
+      "subCategoryId": 0
+    },
+    {
+      "id": 4,
+      "quote": "Verily there is a reward for the righteous",
+      "reference": "Psalm 58:11",
+      "subCategoryId": 0
+    },
+    {
+      "id": 5,
+      "quote": "Thou, LORD, wilt bless the righteous; with favour wilt thou compass him as with a shield",
+      "reference": "Psalm 5:12",
+      "subCategoryId": 0
+    },
+    {
+      "id": 6,
+      "quote": "Salvation belongeth unto the LORD: thy blessing is upon thy people",
+      "reference": "Psalm 3:8",
+      "subCategoryId": 0
+    },
+    {
+      "id": 7,
+      "quote": "He that followeth after righteousness and mercy findeth life, righteousness, and honour",
+      "reference": "Proverbs 21:21",
+      "subCategoryId": 0
+    },
+    {
+      "id": 8,
+      "quote": "Blessings are upon the head of the just. The desire of the righteous shall be granted. The hope of the righteous shall be gladness",
+      "reference": "Proverbs 10:6, 24, 28",
+      "subCategoryId": 0
+    },
+    {
+      "id": 9,
+      "quote": "To him that soweth righteousness shall be a sure reward. Righteousness tendeth to life. The righteous shall flourish as a branch.",
+      "reference": "Proverbs 11:18, 19, 28",
+      "subCategoryId": 0
+    },
+    {
+      "id": 10,
+      "quote": "His secret is with the righteous",
+      "reference": "Proverbs 3:32",
+      "subCategoryId": 0
+    },
+    {
+      "id": 11,
+      "quote": "A good man obtaineth favour of the LORD",
+      "reference": "Proverbs 12:2",
+      "subCategoryId": 0
+    },
+    {
+      "id": 12,
+      "quote": "The light of the righteous rejoiceth. To the righteous good shall be repayed",
+      "reference": "Proverbs 13:9, 21",
+      "subCategoryId": 0
+    },
+    {
+      "id": 13,
+      "quote": "Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever",
+      "reference": "Psalm 23:6",
+      "subCategoryId": 0
+    },
+    {
+      "id": 14,
+      "quote": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things?",
+      "reference": "Romans 8:32",
+      "subCategoryId": 0
+    },
+    {
+      "id": 15,
+      "quote": "All things are yours; whether Paul, or Apollos, or Cephas, or the world, or life, or death, or things present, or things to come; all are yours",
+      "reference": "1Corinthians 3:21, 22",
+      "subCategoryId": 0
+    },
+    {
+      "id": 16,
+      "quote": "Godliness is profitable unto all things, having promise of the life that now is, and of that which is to come",
+      "reference": "1Timothy 4:8",
+      "subCategoryId": 0
+    }
   ]
 }

@@ -1872,6 +1872,827 @@
       "quote": "Every man also to whom God hath given riches and wealth, and hath given him power to eat thereof, and to take his portion, and to rejoice in his labour; this is the gift of God. For he shall not much remember the days of his life; because God answereth him in the joy of his heart",
       "reference": "Ecclesiastes 5:19, 20",
       "subCategoryId": 13
+    },
+    {
+      "id": 126,
+      "quote": "Thou shalt keep therefore his statutes, and his commandments, which I command thee this day, that it may go well with thee, and with thy children after thee, and that thou mayest prolong thy days upon the earth, which the LORD thy God giveth thee, for ever. O that there were such an heart in them, that they would fear me, and keep all my commandments always, that it might be well with them, and with their children for ever!",
+      "reference": "Deuteronomy 4:40; 5:29",
+      "subCategoryId": 14
+    },
+    {
+      "id": 127,
+      "quote": "A good man leaveth an inheritance to his children's children: and the wealth of the sinner is laid up for the just",
+      "reference": "Proverbs 13:22",
+      "subCategoryId": 14
+    },
+    {
+      "id": 128,
+      "quote": "In the fear of the LORD is strong confidence: and his children shall have a place of refuge",
+      "reference": "Proverbs 14:26",
+      "subCategoryId": 14
+    },
+    {
+      "id": 129,
+      "quote": "The seed of the righteous shall be delivered",
+      "reference": "Proverbs 11:21",
+      "subCategoryId": 14
+    },
+    {
+      "id": 130,
+      "quote": "The just man walketh in his integrity: his children are blessed after him",
+      "reference": "Proverbs 20:7",
+      "subCategoryId": 14
+    },
+    {
+      "id": 131,
+      "quote": "The children of thy servants shall continue, and their seed shall be established before thee.",
+      "reference": "Psalm 102:28",
+      "subCategoryId": 14
+    },
+    {
+      "id": 132,
+      "quote": "His seed shall be mighty upon earth: the generation of the upright shall be blessed. His seed shall inherit the earth",
+      "reference": "Psalm 112:2; Psalm 25:13",
+      "subCategoryId": 14
+    },
+    {
+      "id": 133,
+      "quote": "I have been young, and now am old; yet have I not seen the righteous forsaken, nor his seed begging bread. He is ever merciful, and lendeth; and his seed is blessed",
+      "reference": "Psalm 37:25, 26",
+      "subCategoryId": 14
+    },
+    {
+      "id": 134,
+      "quote": "He hath blessed thy children within thee",
+      "reference": "Psalm 147:13",
+      "subCategoryId": 14
+    },
+    {
+      "id": 135,
+      "quote": "I will give them one heart, and one way, that they may fear me for ever, for the good of them, and of their children after them",
+      "reference": "Jeremiah 32:39",
+      "subCategoryId": 14
+    },
+    {
+      "id": 136,
+      "quote": "Thou shalt know that thy tabernacle shall be in peace; and thou shalt visit thy habitation, and shalt not sin",
+      "reference": "Job 5:24",
+      "subCategoryId": 15
+    },
+    {
+      "id": 137,
+      "quote": "If thou wert pure and upright; surely now he would awake for thee, and make the habitation of thy righteousness prosperous. Though thy beginning was small, yet thy latter end should greatly increase",
+      "reference": "Job 8:6, 7",
+      "subCategoryId": 15
+    },
+    {
+      "id": 138,
+      "quote": "Thy wife shall be as a fruitful vine by the sides of thine house: thy children like olive plants round about thy table. Behold, that thus shall the man be blessed that feareth the LORD. The LORD shall bless thee out of Zion: and thou shalt see the good of Jerusalem all the days of thy life. Yea, thou shalt see thy children's children, and peace upon Israel",
+      "reference": "Psalm 128:3-6",
+      "subCategoryId": 15
+    },
+    {
+      "id": 139,
+      "quote": "He blesseth the habitation of the just",
+      "reference": "Proverbs 3:33",
+      "subCategoryId": 15
+    },
+    {
+      "id": 140,
+      "quote": "The house of the righteous shall stand",
+      "reference": "Proverbs 12:7",
+      "subCategoryId": 15
+    },
+    {
+      "id": 141,
+      "quote": "The tabernacle of the upright shall flourish",
+      "reference": "Proverbs 14:11",
+      "subCategoryId": 15
+    },
+    {
+      "id": 142,
+      "quote": "For this shall every one that is godly pray unto thee in a time when thou mayest be found: surely in the floods of great waters they shall not come nigh unto him. Thou art my hiding place; thou shalt preserve me from trouble; thou shalt compass me about with songs of deliverance",
+      "reference": "Psalm 32:6, 7",
+      "subCategoryId": 16
+    },
+    {
+      "id": 143,
+      "quote": "He shall deliver thee in six troubles: yea, in seven there shall no evil touch thee",
+      "reference": "Job 5:19",
+      "subCategoryId": 16
+    },
+    {
+      "id": 144,
+      "quote": "The LORD preserveth the faithful",
+      "reference": "Psalm 31:23",
+      "subCategoryId": 16
+    },
+    {
+      "id": 145,
+      "quote": "There shall no evil befall thee, neither shall any plague come nigh thy dwelling",
+      "reference": "Psalm 91:10",
+      "subCategoryId": 16
+    },
+    {
+      "id": 146,
+      "quote": "There shall no evil happen to the just",
+      "reference": "Proverbs 12:21",
+      "subCategoryId": 16
+    },
+    {
+      "id": 147,
+      "quote": "The way of the slothful man is as an hedge of thorns: but the way of the righteous is made plain",
+      "reference": "Proverbs 15:19",
+      "subCategoryId": 16
+    },
+    {
+      "id": 148,
+      "quote": "Behold, God will not cast away a perfect man, neither will he help the evil doers: Till he fill thy mouth with laughing, and thy lips with rejoicing",
+      "reference": "Job 8:20, 21",
+      "subCategoryId": 17
+    },
+    {
+      "id": 149,
+      "quote": "Thou shalt forget thy misery, and remember it as waters that pass away",
+      "reference": "Job 11:16",
+      "subCategoryId": 17
+    },
+    {
+      "id": 150,
+      "quote": "Even so would he have removed thee out of the strait into a broad place, where there is no straitness; and that which should be set on thy table should be full of fatness",
+      "reference": "Job 36:16",
+      "subCategoryId": 17
+    },
+    {
+      "id": 151,
+      "quote": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning",
+      "reference": "Psalm 30:5",
+      "subCategoryId": 17
+    },
+    {
+      "id": 152,
+      "quote": "Many are the afflictions of the righteous: but the LORD delivereth him out of them all",
+      "reference": "Psalm 34:19",
+      "subCategoryId": 17
+    },
+    {
+      "id": 153,
+      "quote": "Why art thou cast down, O my soul? and why art thou disquieted within me? hope thou in God: for I shall yet praise him, who is the health of my countenance, and my God",
+      "reference": "Psalm 42:11",
+      "subCategoryId": 17
+    },
+    {
+      "id": 154,
+      "quote": "Though ye have lien among the pots, yet shall ye be as the wings of a dove covered with silver, and her feathers with yellow gold",
+      "reference": "Psalm 68:13",
+      "subCategoryId": 17
+    },
+    {
+      "id": 155,
+      "quote": "Thou, which hast shewed me great and sore troubles, shalt quicken me again, and shalt bring me up again from the depths of the earth",
+      "reference": "Psalm 71:20",
+      "subCategoryId": 17
+    },
+    {
+      "id": 156,
+      "quote": "For thou wilt save the afflicted people; but wilt bring down high looks. For thou wilt light my candle: the LORD my God will enlighten my darkness",
+      "reference": "Psalm 18:27, 28",
+      "subCategoryId": 17
+    },
+    {
+      "id": 157,
+      "quote": "The LORD openeth the eyes of the blind: the LORD raiseth them that are bowed down",
+      "reference": "Psalm 146:8",
+      "subCategoryId": 17
+    },
+    {
+      "id": 158,
+      "quote": "They cry unto the LORD in their trouble, and he saveth them out of their distresses",
+      "reference": "Psalm 107:19",
+      "subCategoryId": 17
+    },
+    {
+      "id": 159,
+      "quote": "They that sow in tears shall reap in joy. He that goeth forth and weepeth, bearing precious seed, shall doubtless come again with rejoicing, bringing his sheaves with him",
+      "reference": "Psalm 126:5, 6",
+      "subCategoryId": 17
+    },
+    {
+      "id": 160,
+      "quote": "The righteous is delivered out of trouble, and the wicked cometh in his stead",
+      "reference": "Proverbs 11:8",
+      "subCategoryId": 17
+    },
+    {
+      "id": 161,
+      "quote": "The wicked is snared by the transgression of his lips: but the just shall come out of trouble",
+      "reference": "Proverbs 12:13",
+      "subCategoryId": 17
+    },
+    {
+      "id": 162,
+      "quote": "For a just man falleth seven times, and riseth up again",
+      "reference": "Proverbs 24:16",
+      "subCategoryId": 17
+    },
+    {
+      "id": 163,
+      "quote": "I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end",
+      "reference": "Jeremiah 29:11",
+      "subCategoryId": 17
+    },
+    {
+      "id": 164,
+      "quote": "Their soul shall be as a watered garden; and they shall not sorrow any more at all. I will turn their mourning into joy, and will comfort them, and make them rejoice from their sorrow",
+      "reference": "Jeremiah 31:12, 13",
+      "subCategoryId": 17
+    },
+    {
+      "id": 165,
+      "quote": "Come, and let us return unto the LORD: for he hath torn, and he will heal us; he hath smitten, and he will bind us up",
+      "reference": "Hosea 6:1",
+      ",subCategoryId": 17
+    },
+    {
+      "id": 166,
+      "quote": "The LORD also will be a refuge for the oppressed, a refuge in times of trouble",
+      "reference": "Psalm 9:9",
+      "subCategoryId": 18
+    },
+    {
+      "id": 167,
+      "quote": "He hath not despised nor abhorred the affliction of the afflicted; neither hath he hid his face from him; but when he cried unto him, he heard",
+      "reference": "Psalm 22:24",
+      "subCategoryId": 18
+    },
+    {
+      "id": 168,
+      "quote": "When my father and my mother forsake me, then the LORD will take me up. Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD",
+      "reference": "Psalm 27:10, 14",
+      "subCategoryId": 18
+    },
+    {
+      "id": 169,
+      "quote": "Though he fall, he shall not be utterly cast down: for the LORD upholdeth him with his hand. The salvation of the righteous is of the LORD: he is their strength in the time of trouble",
+      "reference": "Psalm 37:24, 39",
+      "subCategoryId": 18
+    },
+    {
+      "id": 170,
+      "quote": "The LORD is my rock, and my fortress, and my deliverer; my God, my strength, in whom I will trust; my buckler, and the horn of my salvation, and my high tower",
+      "reference": "Psalm 18:2",
+      "subCategoryId": 18
+    },
+    {
+      "id": 171,
+      "quote": "God is our refuge and strength, a very present help in trouble. 2 Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea; though the waters thereof roar and be troubled, though the mountains shake with the swelling thereof. Selah",
+      "reference": "Psalm 46:1-3",
+      "subCategoryId": 18
+    },
+    {
+      "id": 172,
+      "quote": "Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved",
+      "reference": "Psalm 55:22",
+      "subCategoryId": 18
+    },
+    {
+      "id": 173,
+      "quote": "I will be glad and rejoice in thy mercy: for thou hast considered my trouble; thou hast known my soul in adversities",
+      "reference": "Psalm 31:7",
+      "subCategoryId": 18
+    },
+    {
+      "id": 174,
+      "quote": "I have surely seen the affliction of my people which are in Egypt, and have heard their cry by reason of their taskmasters; for I know their sorrows",
+      "reference": "Exodus 3:7",
+      "subCategoryId": 18
+    },
+    {
+      "id": 175,
+      "quote": "Blessed is he that considereth the poor: the LORD will deliver him in time of trouble",
+      "reference": "Psalm 41:1",
+      "subCategoryId": 18
+    },
+    {
+      "id": 176,
+      "quote": "Thou hast given commandment to save me; for thou art my rock and my fortress",
+      "reference": "Psalm 71:3",
+      "subCategoryId": 18
+    },
+    {
+      "id": 177,
+      "quote": "Unto the upright there ariseth light in the darkness",
+      "reference": "Psalm 112:4",
+      "subCategoryId": 18
+    },
+    {
+      "id": 178,
+      "quote": "Who remembered us in our low estate: for his mercy endureth for ever",
+      "reference": "Psalm 136:23",
+      "subCategoryId": 18
+    },
+    {
+      "id": 179,
+      "quote": "Though I walk in the midst of trouble, thou wilt revive me: thou shalt stretch forth thine hand against the wrath of mine enemies, and thy right hand shall save me",
+      "reference": "Psalm 138:7",
+      "subCategoryId": 18
+    },
+    {
+      "id": 180,
+      "quote": "My flesh and my heart faileth: but God is the strength of my heart",
+      "reference": "Psalm 73:26",
+      "subCategoryId": 18
+    },
+    {
+      "quote": "The LORD upholdeth all that fall, and raiseth up all those that be bowed down",
+      "reference": "Psalm 145:14",
+      "subCategoryId": 18
+    },
+    {
+      "id": 182,
+      "quote": "Thou hast been a strength to the poor, a strength to the needy in his distress, a refuge from the storm, a shadow from the heat, when the blast of the terrible ones is as a storm against the wall",
+      "reference": "Isaiah 25:4",
+      "subCategoryId": 18
+    },
+    {
+      "id": 183,
+      "quote": "In measure, when it shooteth forth, thou wilt debate with it: he stayeth his rough wind in the day of the east wind",
+      "reference": "Isaiah 27:8",
+      "subCategoryId": 18
+    },
+    {
+      "id": 184,
+      "quote": "He will not lay upon man more than right; that he should enter into judgment with God",
+      "reference": "Job 34:23",
+      "subCategoryId": 18
+    },
+    {
+      "id": 185,
+      "quote": "Who is among you that feareth the LORD, that obeyeth the voice of his servant, that walketh in darkness, and hath no light? let him trust in the name of the LORD, and stay upon his God",
+      "reference": "Isaiah 50:10",
+      "subCategoryId": 18
+    },
+    {
+      "id": 186,
+      "quote": "For the Lord will not cast off for ever: But though he cause grief, yet will he have compassion according to the multitude of his mercies. For he doth not afflict willingly nor grieve the children of men",
+      "reference": "Lamentations 3:31-33",
+      "subCategoryId": 18
+    },
+    {
+      "id": 187,
+      "quote": "O LORD, my strength, and my fortress, and my refuge in the day of affliction",
+      "reference": "Jeremiah 16:19",
+      "subCategoryId": 18
+    },
+    {
+      "id": 188,
+      "quote": "I am with thee, saith the LORD, to save thee: though I make a full end of all nations whither I have scattered thee, yet will I not make a full end of thee: but I will correct thee in measure, and will not leave thee altogether unpunished",
+      "reference": "Jeremiah 30:11",
+      "subCategoryId": 18
+    },
+    {
+      "id": 189,
+      "quote": "Rejoice not against me, O mine enemy: when I fall, I shall arise; when I sit in darkness, the LORD shall be a light unto me. I will bear the indignation of the LORD, because I have sinned against him, until he plead my cause, and execute judgment for me: he will bring me forth to the light, and I shall behold his righteousness",
+      "reference": "Micah 7:8, 9",
+      "subCategoryId": 18
+    },
+    {
+      "id": 190,
+      "quote": "The LORD is good, a strong hold in the day of trouble; and he knoweth them that trust in him",
+      "reference": "Nahum 1:7",
+      "subCategoryId": 18
+    },
+    {
+      "id": 191,
+      "quote": "Come unto me, all ye that labour and are heavy laden, and I will give you rest",
+      "reference": "Matthew 11:28",
+      "subCategoryId": 18
+    },
+    {
+      "id": 192,
+      "quote": "These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world",
+      "reference": "John 16:33",
+      "subCategoryId": 18
+    },
+    {
+      "id": 193,
+      "quote": "For as the sufferings of Christ abound in us, so our consolation also aboundeth by Christ",
+      "reference": "2Corinthians 1:5",
+      "subCategoryId": 18
+    },
+    {
+      "id": 194,
+      "quote": "We are troubled on every side, yet not distressed; we are perplexed, but not in despair; Persecuted, but not forsaken; cast down, but not destroyed",
+      "reference": "2Corinthians 4:8, 9",
+      "subCategoryId": 18
+    },
+    {
+      "id": 195,
+      "quote": "Ye shall serve the LORD your God, and he shall bless thy bread, and thy water; and I will take sickness away from the midst of thee",
+      "reference": "Exodus 23:25",
+      "subCategoryId": 19
+    },
+    {
+      "id": 196,
+      "quote": "If thou wilt diligently hearken to the voice of the LORD thy God, and wilt do that which is right in his sight, and wilt give ear to his commandments, and keep all his statutes, I will put none of these diseases upon thee, which I have brought upon the Egyptians: for I am the LORD that healeth thee",
+      "reference": "Exodus 15:26",
+      "subCategoryId": 19
+    },
+    {
+      "id": 197,
+      "quote": "He is gracious unto him, and saith, Deliver him from going down to the pit: I have found a ransom. His flesh shall be fresher than a child's: he shall return to the days of his youth: He shall pray unto God, and he will be favourable unto him: and he shall see his face with joy: for he will render unto man his righteousness. He will deliver his soul from going into the pit, and his life shall see the light",
+      "reference": "Job 33:24-26, 28",
+      "subCategoryId": 19
+    },
+    {
+      "id": 198,
+      "quote": "Surely he shall deliver thee from the snare of the fowler, and from the noisome pestilence. Thou shalt not be afraid for the terror by night; nor for the arrow that flieth by day; Nor for the pestilence that walketh in darkness; nor for the destruction that wasteth at noonday",
+      "reference": "Psalm 91:3, 5, 6",
+      "subCategoryId": 19
+    },
+    {
+      "id": 199,
+      "quote": "Who forgiveth all thine iniquities; who healeth all thy diseases",
+      "reference": "Psalm 103:3",
+      "subCategoryId": 19
+    },
+    {
+      "id": 200,
+      "quote": "The LORD will take away from thee all sickness, and will put none of the evil diseases of Egypt, which thou knowest, upon thee",
+      "reference": "Deuteronomy 7:15",
+      "subCategoryId": 19
+    },
+    {
+      "id": 201,
+      "quote": "Behold, I will bring it health and cure, and I will cure them, and will reveal unto them the abundance of peace and truth",
+      "reference": "Jeremiah 33:6",
+      "subCategoryId": 19
+    },
+    {
+      "id": 202,
+      "quote": "The LORD will strengthen him upon the bed of languishing: thou wilt make all his bed in his sickness",
+      "reference": "Psalm 41:3",
+      "subCategoryId": 20
+    },
+    {
+      "id": 203,
+      "quote": "The LORD preserveth the simple: I was brought low, and he helped me",
+      "reference": "Psalm 116:6",
+      "subCategoryId": 20
+    },
+    {
+      "id": 204,
+      "quote": "Notwithstanding she shall be saved in childbearing, if they continue in faith and charity and holiness with sobriety",
+      "reference": "1Timothy 2:15",
+      "subCategoryId": 20
+    },
+    {
+      "id": 205,
+      "quote": "He will also bless the fruit of thy womb",
+      "reference": "Deuteronomy 7:13",
+      "subCategoryId": 20
+    },
+    {
+      "id": 206,
+      "quote": "Even by the God of thy father, who shall help thee; and by the Almighty, who shall bless thee with blessings of heaven above, blessings of the deep that lieth under, blessings of the breasts, and of the womb",
+      "reference": "Genesis 49:25",
+      "subCategoryId": 20
+    },
+    {
+      "id": 207,
+      "quote": "Cast me not off in the time of old age; forsake me not when my strength faileth",
+      "reference": "Psalm 71:9",
+      "subCategoryId": 21
+    },
+    {
+      "id": 208,
+      "quote": "And even to your old age I am he; and even to hoar hairs will I carry you: I have made, and I will bear; even I will carry, and will deliver you",
+      "reference": "Isaiah 46:4",
+      "subCategoryId": 21
+    },
+    {
+      "id": 209,
+      "quote": "The hoary head is a crown of glory, if it be found in the way of righteousness",
+      "reference": "Proverbs 16:31",
+      "subCategoryId": 21
+    },
+    {
+      "id": 210,
+      "quote": "In famine he shall redeem thee from death. At destruction and famine thou shalt laugh",
+      "reference": "Job 5:20, 22",
+      "subCategoryId": 22
+    },
+    {
+      "id": 211,
+      "quote": "Behold, the eye of the LORD is upon them that fear him, upon them that hope in his mercy; to deliver their soul from death, and to keep them alive in famine",
+      "reference": "Psalm 33:18, 19",
+      "subCategoryId": 22
+    },
+    {
+      "id": 212,
+      "quote": "They shall not be ashamed in the evil time: and in the days of famine they shall be satisfied",
+      "reference": "Psalm 37:19",
+      "subCategoryId": 22
+    },
+    {
+      "id": 213,
+      "quote": "Which giveth food to the hungry",
+      "reference": "Psalm 146:7",
+      "subCategoryId": 22
+    },
+    {
+      "id": 214,
+      "quote": "When the poor and needy seek water, and there is none, and their tongue faileth for thirst, I the LORD will hear them, I the God of Israel will not forsake them",
+      "reference": "Isaiah 41:17",
+      "subCategoryId": 22
+    },
+    {
+      "id": 215,
+      "quote": "I will call for the corn, and will increase it, and lay no famine upon you. And I will multiply the fruit of the tree, and the increase of the field, that ye shall receive no more reproach of famine among the heathen",
+      "reference": "Ezekiel 36:29, 30",
+      "subCategoryId": 22
+    },
+    {
+      "id": 216,
+      "quote": "Ask ye of the LORD rain in the time of the latter rain; so the LORD shall make bright clouds, and give them showers of rain, to every one grass in the field",
+      "reference": "Zechariah 10:1",
+      "subCategoryId": 22
+    },
+    {
+      "id": 217,
+      "quote": "He satisfieth the longing soul, and filleth the hungry soul with goodness",
+      "reference": "Psalm 107:9",
+      "subCategoryId": 22
+    },
+    {
+      "id": 218,
+      "quote": "Although the fig tree shall not blossom, neither shall fruit be in the vines; the labour of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls: Yet I will rejoice in the LORD, I will joy in the God of my salvation",
+      "reference": "Habakkuk 3:17, 18",
+      "subCategoryId": 22
+    },
+    {
+      "id": 219,
+      "quote": "Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God",
+      "reference": "Matthew 4:4",
+      "subCategoryId": 22
+    },
+    {
+      "id": 220,
+      "quote": "The LORD your God is he that goeth with you, to fight for you against your enemies, to save you. For the LORD thy God walketh in the midst of thy camp, to deliver thee, and to give up thine enemies before thee; therefore shall thy camp be holy: that he see no unclean thing in thee, and turn away from thee",
+      "reference": "Deuteronomy 20:4; 23:14",
+      "subCategoryId": 23
+    },
+    {
+      "id": 221,
+      "quote": "In war from the power of the sword",
+      "reference": "Job 5:20",
+      "subCategoryId": 23
+    },
+    {
+      "id": 222,
+      "quote": "Through God we shall do valiantly: for he it is that shall tread down our enemies",
+      "reference": "Psalm 60:12",
+      "subCategoryId": 23
+    },
+    {
+      "id": 223,
+      "quote": "Behold, God himself is with us for our captain",
+      "reference": "2Chronicles 13:12",
+      "subCategoryId": 23
+    },
+    {
+      "id": 224,
+      "quote": "Be not afraid of sudden fear, neither of the desolation of the wicked, when it cometh. For the LORD shall be thy confidence, and shall keep thy foot from being taken",
+      "reference": "Proverbs 3:25, 26",
+      "subCategoryId": 23
+    },
+    {
+      "id": 225,
+      "quote": "Behold, all they that were incensed against thee shall be ashamed and confounded: they shall be as nothing; and they that strive with thee shall perish. Thou shalt seek them, and shalt not find them, even them that contended with thee: they that war against thee shall be as nothing, and as a thing of nought",
+      "reference": "Isaiah 41:11, 12",
+      "subCategoryId": 23
+    },
+    {
+      "id": 226,
+      "quote": "I will deliver thee in that day, saith the LORD: and thou shalt not be given into the hand of the men of whom thou art afraid. For I will surely deliver thee, and thou shalt not fall by the sword, but thy life shall be for a prey unto thee: because thou hast put thy trust in me, saith the LORD",
+      "reference": "Jeremiah 39:17, 18",
+      "subCategoryId": 23
+    },
+    {
+      "id": 227,
+      "quote": "Fear not: for they that be with us are more than they that be with them",
+      "reference": "2Kings 6:16",
+      "subCategoryId": 24
+    },
+    {
+      "id": 228,
+      "quote": "LORD, it is nothing with thee to help, whether with many, or with them that have no power",
+      "reference": "2Chronicles 14:11",
+      "subCategoryId": 24
+    },
+    {
+      "id": 229,
+      "quote": "The LORD your God ye shall fear; and he shall deliver you out of the hand of all your enemies",
+      "reference": "2Kings 17:39",
+      "subCategoryId": 24
+    },
+    {
+      "id": 230,
+      "quote": "Shew thy marvellous lovingkindness, O thou that savest by thy right hand them which put their trust in thee from those that rise up against them",
+      "reference": "Psalm 17:7",
+      "subCategoryId": 24
+    },
+    {
+      "id": 231,
+      "quote": "In the time of trouble he shall hide me in his pavilion: in the secret of his tabernacle shall he hide me; he shall set me up upon a rock. And now shall mine head be lifted up above mine enemies round about me: therefore will I offer in his tabernacle sacrifices of joy; I will sing, yea, I will sing praises unto the LORD",
+      "reference": "Psalm 27:5, 6",
+      "subCategoryId": 24
+    },
+    {
+      "id": 232,
+      "quote": "The wicked watcheth the righteous, and seeketh to slay him. The LORD will not leave him in his hand, nor condemn him when he is judged. And the LORD shall help them, and deliver them: he shall deliver them from the wicked, and save them, because they trust in him",
+      "reference": "Psalm 37:32, 33, 40",
+      "subCategoryId": 24
+    },
+    {
+      "id": 233,
+      "quote": "He preserveth the souls of his saints; he delivereth them out of the hand of the wicked",
+      "reference": "Psalm 97:10",
+      "subCategoryId": 24
+    },
+    {
+      "id": 234,
+      "quote": "His heart is established, he shall not be afraid, until he see his desire upon his enemies",
+      "reference": "Psalm 112:8",
+      "subCategoryId": 24
+    },
+    {
+      "id": 235,
+      "quote": "The LORD taketh my part with them that help me: therefore shall I see my desire upon them that hate me",
+      "reference": "Psalm 118:7",
+      "subCategoryId": 24
+    },
+    {
+      "id": 236,
+      "quote": "The rod of the wicked shall not rest upon the lot of the righteous; lest the righteous put forth their hands unto iniquity",
+      "reference": "Psalm 125:3",
+      "subCategoryId": 24
+    },
+    {
+      "id": 237,
+      "quote": "They that hate thee shall be clothed with shame; and the dwelling place of the wicked shall come to nought",
+      "reference": "Job 8:22",
+      "subCategoryId": 24
+    },
+    {
+      "id": 238,
+      "quote": "When a man's ways please the LORD, he maketh even his enemies to be at peace with him",
+      "reference": "Proverbs 16:7",
+      "subCategoryId": 24
+    },
+    {
+      "id": 239,
+      "quote": "Thou shalt bring down the noise of strangers, as the heat in a dry place; even the heat with the shadow of a cloud: the branch of the terrible ones shall be brought low",
+      "reference": "Isaiah 25:5",
+      "subCategoryId": 24
+    },
+    {
+      "id": 240,
+      "quote": "Whosoever shall gather together against thee shall fall for thy sake. No weapon that is formed against thee shall prosper; and every tongue that shall rise against thee in judgment thou shalt condemn. This is the heritage of the servants of the LORD, and their righteousness is of me, saith the LORD",
+      "reference": "Isaiah 54:15, 17",
+      "subCategoryId": 24
+    },
+    {
+      "id": 241,
+      "quote": "The LORD shall cause thine enemies that rise up against thee to be smitten before thy face: they shall come out against thee one way, and flee before thee seven ways",
+      "reference": "Deuteronomy 28:7",
+      "subCategoryId": 24
+    },
+    {
+      "id": 242,
+      "quote": "Shall not God avenge his own elect, which cry day and night unto him, though he bear long with them? I tell you that he will avenge them speedily",
+      "reference": "Luke 18:7, 8",
+      "subCategoryId": 24
+    },
+    {
+      "id": 243,
+      "quote": "I am with thee, and no man shall set on thee to hurt thee",
+      "reference": "Acts 18:10",
+      "subCategoryId": 24
+    },
+    {
+      "id": 244,
+      "quote": "So that we may boldly say, The Lord is my helper, and I will not fear what man shall do unto me. The LORD is on my side; I will not fear: what can man do unto me?",
+      "reference": "Hebrews 13:6; Psalm 118:6",
+      "subCategoryId": 24
+    },
+    {
+      "id": 245,
+      "quote": "That we should be saved from our enemies, and from the hand of all that hate us; That he would grant unto us, that we being delivered out of the hand of our enemies might serve him without fear, in holiness and righteousness before him, all the days of our life",
+      "reference": "Luke 1:71, 74, 75",
+      "subCategoryId": 24
+    },
+    {
+      "id": 246,
+      "quote": "If thou at all take thy neighbour's raiment to pledge, thou shalt deliver it unto him by that the sun goeth down: For that is his covering only, it is his raiment for his skin: wherein shall he sleep? and it shall come to pass, when he crieth unto me, that I will hear; for I am gracious",
+      "reference": "Exodus 22:26, 27",
+      "subCategoryId": 25
+    },
+    {
+      "id": 247,
+      "quote": "For the oppression of the poor, for the sighing of the needy, now will I arise, saith the LORD; I will set him in safety from him that puffeth at him",
+      "reference": "Psalm 12:5",
+      "subCategoryId": 25
+    },
+    {
+      "id": 248,
+      "quote": "All my bones shall say, LORD, who is like unto thee, which deliverest the poor from him that is too strong for him, yea, the poor and the needy from him that spoileth him?",
+      "reference": "Psalm 35:10",
+      "subCategoryId": 25
+    },
+    {
+      "id": 249,
+      "quote": "He shall judge the poor of the people, he shall save the children of the needy, and shall break in pieces the oppressor. He shall redeem their soul from deceit and violence: and precious shall their blood be in his sight",
+      "reference": "Psalm 72:4, 14",
+      "subCategoryId": 25
+    },
+    {
+      "id": 250,
+      "quote": "He shall stand at the right hand of the poor, to save him from those that condemn his soul",
+      "reference": "Psalm 109:31",
+      "subCategoryId": 25
+    },
+    {
+      "id": 251,
+      "quote": "Which executeth judgment for the oppressed",
+      "reference": "Psalm 146:7",
+      "subCategoryId": 25
+    },
+    {
+      "id": 252,
+      "quote": "If thou seest the oppression of the poor, and violent perverting of judgment and justice in a province, marvel not at the matter: for he that is higher than the highest regardeth; and there be higher than they",
+      "reference": "Ecclesiastes 5:8",
+      "subCategoryId": 25
+    },
+    {
+      "id": 253,
+      "quote": "In righteousness shalt thou be established: thou shalt be far from oppression; for thou shalt not fear: and from terror; for it shall not come near thee",
+      "reference": "Isaiah 54:14",
+      "subCategoryId": 25
+    },
+    {
+      "id": 254,
+      "quote": "Thou shalt be hid from the scourge of the tongue: neither shalt thou be afraid of destruction when it cometh",
+      "reference": "Job 5:21",
+      "subCategoryId": 26
+    },
+    {
+      "id": 255,
+      "quote": "Thou lift up thy face without spot",
+      "reference": "Job 11:15",
+      "subCategoryId": 26
+    },
+    {
+      "id": 256,
+      "quote": "He shall bring forth thy righteousness as the light, and thy judgment as the noonday",
+      "reference": "Psalm 37:6",
+      "subCategoryId": 26
+    },
+    {
+      "id": 257,
+      "quote": "Thou shalt hide them in the secret of thy presence from the pride of man: thou shalt keep them secretly in a pavilion from the strife of tongues",
+      "reference": "Psalm 31:20",
+      "subCategoryId": 26
+    },
+    {
+      "id": 258,
+      "quote": "He shall send from heaven, and save me from the reproach of him that would swallow me up. Selah. God shall send forth his mercy and his truth",
+      "reference": "Psalm 57:3",
+      "subCategoryId": 26
+    },
+    {
+      "id": 259,
+      "quote": "Hearken unto me, ye that know righteousness, the people in whose heart is my law; fear ye not the reproach of men, neither be ye afraid of their revilings. For the moth shall eat them up like a garment, and the worm shall eat them like wool: but my righteousness shall be for ever, and my salvation from generation to generation",
+      "reference": "Isaiah 51:7, 8",
+      "subCategoryId": 27
+    },
+    {
+      "id": 260,
+      "quote": "Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake. Rejoice, and be exceeding glad: for great is your reward in heaven",
+      "reference": "Matthew 5:11, 12",
+      "subCategoryId": 27
+    },
+    {
+      "id": 261,
+      "quote": "Esteeming the reproach of Christ greater riches than the treasures in Egypt: for he had respect unto the recompence of the reward",
+      "reference": "Hebrews 11:26",
+      "subCategoryId": 27
+    },
+    {
+      "id": 262,
+      "quote": "If ye be reproached for the name of Christ, happy are ye; for the spirit of glory and of God resteth upon you: on their part he is evil spoken of, but on your part he is glorified",
+      "reference": "1Peter 4:14",
+      "subCategoryId": 27
     }
   ]
 }

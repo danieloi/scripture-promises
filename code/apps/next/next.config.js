@@ -17,6 +17,7 @@ const nextConfig = {
     'moti',
     'app',
     'react-native-reanimated',
+    'nativewind',
     '@expo/html-elements',
     'react-native-gesture-handler',
   ],

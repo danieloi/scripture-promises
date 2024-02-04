@@ -1,9 +1,20 @@
 {
   "compilerOptions": {
     "strictNullChecks": true,
+    "baseUrl": "./packages",
     "noUncheckedIndexedAccess": true,
+    "module": "esnext",
+    "noUnusedLocals": true,
     "paths": {
-      "app/*": ["./packages/app/*"]
+      "app/*": ["./app/*"],
+      "@showtime-xyz/universal": ["./design-system"],
+      "@showtime-xyz/universal.tailwind": ["./design-system/tailwind"],
+      "@showtime-xyz/universal.view": ["./design-system/view"],
+      "@showtime-xyz/universal.text": ["./design-system/text"],
+      "@showtime-xyz/universal.hooks": ["./design-system/hooks"],
+      "@showtime-xyz/universal.accordion": ["./design-system/accordion"],
+      "@showtime-xyz/universal.color-scheme": ["./design-system/color-scheme"],
+      "@showtime-xyz/universal.utils": ["./design-system/utils"]
     }
   },
   "extends": "expo/tsconfig.base"

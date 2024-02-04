@@ -1,5 +1,10 @@
+import { ColorSchemeProvider } from '@showtime-xyz/universal.color-scheme'
 import { Dripsy } from './dripsy'
 
 export function Provider({ children }: { children: React.ReactNode }) {
-  return <Dripsy>{children}</Dripsy>
+  return (
+    <ColorSchemeProvider>
+      <Dripsy>{children}</Dripsy>
+    </ColorSchemeProvider>
+  )
 }

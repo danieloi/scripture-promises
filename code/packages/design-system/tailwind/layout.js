@@ -1,0 +1,7 @@
+const MAX_CONTENT_WIDTH = 1140;
+const MAX_HEADER_WIDTH = 1440;
+
+module.exports = {
+  MAX_CONTENT_WIDTH,
+  MAX_HEADER_WIDTH,
+};

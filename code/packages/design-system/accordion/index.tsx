@@ -21,6 +21,7 @@ type ChevronProps = {
    * e.g. rotazeZ={["right", "bottom"]}
    */
   rotazeZ?: ChevronRotazeZ[]
+  lighter?: boolean
 }
 const formatRotazeZ = (rotazeZ: ChevronRotazeZ) => {
   switch (rotazeZ) {
@@ -36,7 +37,11 @@ const formatRotazeZ = (rotazeZ: ChevronRotazeZ) => {
       return '0deg'
   }
 }
-const Chevron = ({ children, rotazeZ = ['bottom', 'top'] }: ChevronProps) => {
+const Chevron = ({
+  children,
+  rotazeZ = ['bottom', 'top'],
+  lighter,
+}: ChevronProps) => {
   const { value: selectedValue } = useContext(RNAccordion.RootContext)
   const { value: itemValue } = useContext(RNAccordion.ItemContext)
   const isExpanded = itemValue === selectedValue
@@ -54,6 +59,7 @@ const Chevron = ({ children, rotazeZ = ['bottom', 'top'] }: ChevronProps) => {
         duration: 500,
         easing: Easing.bezier(0.87, 0, 0.13, 1),
       }}
+      style={{ opacity: lighter ? 0.5 : 1 }}
     >
       {children ? (
         children
@@ -95,7 +101,7 @@ const Trigger = ({ tw = '', ...props }: ViewProps) => {
 const Content = ({ tw = '', ...props }: ViewProps) => {
   return (
     <RNAccordion.Content>
-      <View tw={['p-4', tw]} {...props} />
+      <View tw={['pl-4 pb-4', tw]} {...props} />
     </RNAccordion.Content>
   )
 }

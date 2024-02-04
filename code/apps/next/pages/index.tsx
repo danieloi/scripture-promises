@@ -79,12 +79,12 @@ const Index = ({ data }: IndexProps) => {
                       <Accordion.Item key={category.id} value={category.name}>
                         <Accordion.Trigger>
                           <Accordion.Label>{category.name}</Accordion.Label>
-                          <Accordion.Chevron />
+                          <Accordion.Chevron lighter />
                         </Accordion.Trigger>
                         <Accordion.Content>
                           {category.subCategories.map((subCategory) => {
                             return (
-                              <Text tw="mb-3" key={subCategory.id}>
+                              <Text tw="pl-4 mb-4" key={subCategory.id}>
                                 {subCategory.name}
                               </Text>
                             )

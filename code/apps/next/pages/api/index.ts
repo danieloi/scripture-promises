@@ -1,12 +1,20 @@
 import data from '../../../data.json'
-import { Category, SubCategory, SuperCategory } from '../../../../types'
+import {
+  Category,
+  IndexData,
+  SubCategory,
+  SuperCategory,
+} from '../../../../types'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 const subCategories = [...data.subCategories] as SubCategory[]
 const categories = [...data.categories] as Category[]
 const superCategories = [...data.superCategories] as SuperCategory[]
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<IndexData[]>
+) {
   const data = getIndexData()
 
   console.dir(data, { depth: null })
@@ -15,6 +23,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
 function getIndexData() {
   return superCategories.map((sc) => ({
+    id: sc.id,
     name: sc.name,
     // TODO; denormalize this so we don't have to do this O(n) operation
     // constant time is possible with hashmaps with keys like sc.id.categoryId
@@ -22,10 +31,12 @@ function getIndexData() {
     categories: categories
       .filter((c) => c.superCategoryId == sc.id)
       .map((c) => ({
+        id: c.id,
         name: c.name,
         subCategories: subCategories
           .filter((sc) => sc.categoryId == c.id)
           .map((sc) => ({
+            id: sc.id,
             name: sc.name,
           })),
       })),

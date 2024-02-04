@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@capsizecss/core": "^3.1.1",
     "app": "*",
     "expo": "^49.0.0",
     "expo-linear-gradient": "~12.3.0",

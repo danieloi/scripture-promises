@@ -31,3 +31,20 @@ export type Promise = {
   reference: string
   subCategoryId: number
 }
+
+type SubCategoryData = {
+  id: number
+  name: string
+}
+
+type CategoryData = {
+  id: number
+  name: string
+  subCategories: SubCategoryData[]
+}
+
+export type IndexData = {
+  id: number
+  name: string
+  categories: CategoryData[]
+}

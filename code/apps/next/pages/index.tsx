@@ -12,7 +12,7 @@ interface IndexProps {
 
 const Container = (props: any) => {
   return (
-    <View tw={' bg-gray-100 p-10 dark:bg-gray-900'} style={{ flex: 1 }}>
+    <View tw={' bg-gray-100 p-4 md:p-10 dark:bg-gray-900'} style={{ flex: 1 }}>
       {props.children}
     </View>
   )
@@ -45,7 +45,10 @@ const Index = ({ data }: IndexProps) => {
                         <Accordion.Content>
                           {category.subCategories.map((subCategory) => {
                             return (
-                              <Text tw="pl-4 mb-4" key={subCategory.id}>
+                              <Text
+                                tw="pl-4 p-4 mb-2  font-semibold text-gray-900 dark:text-white"
+                                key={subCategory.id}
+                              >
                                 {subCategory.name}
                               </Text>
                             )

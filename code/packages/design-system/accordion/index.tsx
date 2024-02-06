@@ -51,8 +51,8 @@ const Chevron = ({
     <MotiView
       animate={{
         rotateZ: isExpanded
-          ? formatRotazeZ(rotazeZ[1])
-          : formatRotazeZ(rotazeZ[0]),
+          ? formatRotazeZ(rotazeZ[1]!)
+          : formatRotazeZ(rotazeZ[0]!),
       }}
       transition={{
         type: 'timing',

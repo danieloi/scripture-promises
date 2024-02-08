@@ -70,6 +70,9 @@ export function AnimateHeight({
 
   // stops flicker when it's open on mount and shouldAnimateOnMount is false
   // useful for when we hit back and we had an accordion open prior
+  // better solution would be to switch to nextjs app router
+  // and keep the accordion mounted when the detail view is
+  // visible
   if (!hide && !shouldAnimate) {
     return (
       <Animated.View style={[style]}>

@@ -68,6 +68,22 @@ export function AnimateHeight({
     }
   }, [hide, measuredHeight, extraHeight])
 
+  // stops flicker when it's open on mount and shouldAnimateOnMount is false
+  // useful for when we hit back and we had an accordion open prior
+  if (!hide && !shouldAnimate) {
+    return (
+      <Animated.View style={[style]}>
+        <Animated.View
+          onLayout={({ nativeEvent }) => {
+            measuredHeight.value = Math.ceil(nativeEvent.layout.height)
+          }}
+        >
+          {children}
+        </Animated.View>
+      </Animated.View>
+    )
+  }
+
   return (
     <Animated.View style={[styles.hidden, style, containerStyle]}>
       <Animated.View

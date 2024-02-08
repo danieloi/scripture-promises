@@ -18,7 +18,6 @@ const SubCategoryDetail = ({ data }: CategoryDetailProps) => {
 }
 
 SubCategoryDetail.getInitialProps = async (ctx: NextPageContext) => {
-  console.log({ query: ctx.query })
   const url = getApiUrl(urlWithQuery('/subcategories', ctx.query), ctx)
 
   const response = await fetch(url)

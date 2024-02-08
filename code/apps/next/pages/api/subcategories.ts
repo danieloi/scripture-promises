@@ -15,7 +15,6 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<SubcategoryDetailData>
 ) {
-  console.log({ req })
   const data = getCategoryDetailData(req.query.id as string)
   return res.status(200).json(data)
 }

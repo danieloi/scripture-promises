@@ -1,14 +1,13 @@
 import { NextPageContext } from 'next'
-import getApiUrl from '../../../utils/getApiUrl'
-import urlWithQuery from '../../../utils/urlWithQuery'
+import getApiUrl from '../../utils/getApiUrl'
+import urlWithQuery from '../../utils/urlWithQuery'
 import { TextLink } from 'app/navigation/link'
-import { TreeViewContext } from 'app/components/tree-view-context'
 import { View } from '@showtime-xyz/universal.view'
 import { Accordion } from '@showtime-xyz/universal.accordion'
-import { IndexData } from '../../../types'
-import { useCallback, useContext } from 'react'
+import { IndexData } from '../../types'
 interface IndexProps {
   data: IndexData[]
+  children: React.ReactNode
 }
 
 const Container = (props: any) => {
@@ -19,39 +18,10 @@ const Container = (props: any) => {
   )
 }
 
-const Index = ({ data }: IndexProps) => {
-  const {
-    selectedCategory,
-    selectedSuperCategory,
-    setSelectedCategory,
-    setSelectedSuperCategory,
-  } = useContext(TreeViewContext)
-
-  const handleSuperCategoryChange = useCallback(
-    (name: string) => {
-      setSelectedSuperCategory(name)
-    },
-    [setSelectedSuperCategory]
-  )
-
-  const handleCategoryChange = useCallback(
-    (name: string) => {
-      setSelectedCategory(name)
-    },
-    [setSelectedCategory]
-  )
-
-  console.log({
-    selectedCategory,
-    selectedSuperCategory,
-  })
-
+const Layout = ({ data, children }: IndexProps) => {
   return (
     <Container>
-      <Accordion.Root
-        value={selectedSuperCategory}
-        onValueChange={handleSuperCategoryChange}
-      >
+      <Accordion.Root>
         {data.map((superCategory) => {
           return (
             <Accordion.Item
@@ -64,10 +34,7 @@ const Index = ({ data }: IndexProps) => {
                 <Accordion.Chevron />
               </Accordion.Trigger>
               <Accordion.Content>
-                <Accordion.Root
-                  onValueChange={handleCategoryChange}
-                  value={selectedCategory}
-                >
+                <Accordion.Root>
                   {superCategory.categories.map((category) => {
                     return (
                       <Accordion.Item key={category.id} value={category.name}>
@@ -102,7 +69,7 @@ const Index = ({ data }: IndexProps) => {
   )
 }
 
-Index.getInitialProps = async (ctx: NextPageContext) => {
+Layout.getInitialProps = async (ctx: NextPageContext) => {
   const url = getApiUrl(urlWithQuery('/', ctx.query), ctx)
   const response = await fetch(url)
   const result = await response.json()
@@ -112,4 +79,4 @@ Index.getInitialProps = async (ctx: NextPageContext) => {
   }
 }
 
-export default Index
+export default Layout

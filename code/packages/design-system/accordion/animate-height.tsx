@@ -1,24 +1,31 @@
-import { StyleSheet, StyleProp, ViewStyle } from "react-native";
+import { useEffectOnce } from '@showtime-xyz/universal.hooks'
+import { useState } from 'react'
+import { StyleSheet, StyleProp, ViewStyle } from 'react-native'
 
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withTiming,
   runOnJS,
-} from "react-native-reanimated";
+} from 'react-native-reanimated'
 
 export type AnimateHeightProps = {
-  children?: React.ReactNode;
+  children?: React.ReactNode
   /**
    * If `true`, the height will automatically animate to 0. Default: `false`.
    */
-  hide?: boolean;
-  onHeightDidAnimate?: (height: number) => void;
-  initialHeight?: number;
-  style?: StyleProp<ViewStyle>;
-  extraHeight?: number;
-};
-const transition = { duration: 200 } as const;
+  hide?: boolean
+  onHeightDidAnimate?: (height: number) => void
+  initialHeight?: number
+  style?: StyleProp<ViewStyle>
+  extraHeight?: number
+  shouldAnimateOnMount?: boolean
+}
+const transition = { duration: 200 } as const
+
+function getTransition(shouldAnimate: boolean) {
+  return shouldAnimate ? transition : { duration: 0 }
+}
 
 export function AnimateHeight({
   children,
@@ -27,49 +34,59 @@ export function AnimateHeight({
   onHeightDidAnimate,
   initialHeight = 0,
   extraHeight = 0,
+  shouldAnimateOnMount = false,
 }: AnimateHeightProps) {
-  const measuredHeight = useSharedValue(initialHeight);
+  const [shouldAnimate, setShouldAnimate] = useState(false)
+
+  useEffectOnce(() => {
+    setShouldAnimate(true)
+  })
+
+  const measuredHeight = useSharedValue(initialHeight)
   const childStyle = useAnimatedStyle(
     () => ({
-      opacity: withTiming(!measuredHeight.value || hide ? 0 : 1, transition),
+      opacity: withTiming(
+        !measuredHeight.value || hide ? 0 : 1,
+        getTransition(shouldAnimate || shouldAnimateOnMount)
+      ),
     }),
-    [hide, measuredHeight]
-  );
+    [hide, measuredHeight, shouldAnimate, shouldAnimateOnMount]
+  )
 
   const containerStyle = useAnimatedStyle(() => {
     return {
-      willChange: "transform, scroll-position, contents", // make it hardware accelerated on web
+      willChange: 'transform, scroll-position, contents', // make it hardware accelerated on web
       height: withTiming(
         hide ? 0 : measuredHeight.value + extraHeight,
-        transition,
+        getTransition(shouldAnimate || shouldAnimateOnMount),
         () => {
           if (onHeightDidAnimate) {
-            runOnJS(onHeightDidAnimate)(measuredHeight.value + extraHeight);
+            runOnJS(onHeightDidAnimate)(measuredHeight.value + extraHeight)
           }
         }
       ),
-    };
-  }, [hide, measuredHeight, extraHeight]);
+    }
+  }, [hide, measuredHeight, extraHeight])
 
   return (
     <Animated.View style={[styles.hidden, style, containerStyle]}>
       <Animated.View
         style={[StyleSheet.absoluteFill, styles.autoBottom, childStyle]}
         onLayout={({ nativeEvent }) => {
-          measuredHeight.value = Math.ceil(nativeEvent.layout.height);
+          measuredHeight.value = Math.ceil(nativeEvent.layout.height)
         }}
       >
         {children}
       </Animated.View>
     </Animated.View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   autoBottom: {
-    bottom: "auto",
+    bottom: 'auto',
   },
   hidden: {
-    overflow: "hidden",
+    overflow: 'hidden',
   },
-});
+})

@@ -48,3 +48,9 @@ export type IndexData = {
   name: string
   categories: CategoryData[]
 }
+
+export type SubcategoryDetailData = {
+  id: number
+  name: string
+  promises: Promise[]
+}

@@ -17,7 +17,7 @@ export default function handler(
 ) {
   const data = getIndexData()
 
-  console.dir(data, { depth: null })
+  // console.dir(data, { depth: null })
   return res.status(200).json(data)
 }
 

@@ -9,6 +9,8 @@
       "app/*": ["./app/*"],
       "@showtime-xyz/universal": ["./design-system"],
       "@showtime-xyz/universal.tailwind": ["./design-system/tailwind"],
+      "@showtime-xyz/universal.pressable": ["./design-system/pressable"],
+      "@showtime-xyz/universal.router": ["./design-system/router"],
       "@showtime-xyz/universal.view": ["./design-system/view"],
       "@showtime-xyz/universal.text": ["./design-system/text"],
       "@showtime-xyz/universal.hooks": ["./design-system/hooks"],

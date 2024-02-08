@@ -3,20 +3,12 @@ import getApiUrl from '../../../utils/getApiUrl'
 import urlWithQuery from '../../../utils/urlWithQuery'
 import { TextLink } from 'app/navigation/link'
 import { TreeViewContext } from 'app/components/tree-view-context'
-import { View } from '@showtime-xyz/universal.view'
+import { PageContainer } from 'app/components/page-container'
 import { Accordion } from '@showtime-xyz/universal.accordion'
 import { IndexData } from '../../../types'
 import { useCallback, useContext } from 'react'
 interface IndexProps {
   data: IndexData[]
-}
-
-const Container = (props: any) => {
-  return (
-    <View tw={' bg-gray-100 p-4 md:p-10 dark:bg-gray-900'} style={{ flex: 1 }}>
-      {props.children}
-    </View>
-  )
 }
 
 const Index = ({ data }: IndexProps) => {
@@ -41,13 +33,8 @@ const Index = ({ data }: IndexProps) => {
     [setSelectedCategory]
   )
 
-  console.log({
-    selectedCategory,
-    selectedSuperCategory,
-  })
-
   return (
-    <Container>
+    <PageContainer>
       <Accordion.Root
         value={selectedSuperCategory}
         onValueChange={handleSuperCategoryChange}
@@ -98,7 +85,7 @@ const Index = ({ data }: IndexProps) => {
           )
         })}
       </Accordion.Root>
-    </Container>
+    </PageContainer>
   )
 }
 

@@ -103,9 +103,14 @@ module.exports = {
         '.text-sm': textSizes['text-sm'],
         '.text-15': textSizes['text-15'],
         '.text-base': textSizes['text-base'],
-        '.text-lg': {
-          ...textSizes['text-lg'],
-        },
+        // commented because these produce line-heights that override tailwind's
+        // leading classes I suspect the showtime.xyz folks used these since
+        // their app wasn't supposed to show long blocks of text in general
+        // hence things like negative margin that reduce line-height
+
+        // '.text-lg': {
+        //   ...textSizes['text-lg'],
+        // },
         '.text-xl': textSizes['text-xl'],
         '.text-2xl': {
           ...textSizes['text-2xl'],

@@ -3,13 +3,18 @@ import getApiUrl from '../../../../utils/getApiUrl'
 import urlWithQuery from '../../../../utils/urlWithQuery'
 import { NextPageContext } from 'next'
 import { SubcategoryDetailData } from '../../../../types'
+import { PageContainer } from 'app/components/page-container'
 
 type CategoryDetailProps = {
   data: SubcategoryDetailData
 }
 
 const SubCategoryDetail = ({ data }: CategoryDetailProps) => {
-  return <pre>{JSON.stringify(data, null, 2)}</pre>
+  return (
+    <PageContainer>
+      <SubCategoryDetailScreen data={data} />
+    </PageContainer>
+  )
 }
 
 SubCategoryDetail.getInitialProps = async (ctx: NextPageContext) => {
@@ -20,7 +25,6 @@ SubCategoryDetail.getInitialProps = async (ctx: NextPageContext) => {
 
   const result = await response.json()
 
-  console.log({ result })
   return {
     data: result,
   }

@@ -19,7 +19,7 @@ export const SubCategoryDetailScreen: React.FC<SubCategoryDetailScreenProps> =
         {data.promises.map((promise) => (
           <View
             key={promise.id}
-            tw="mb-4 p-4 rounded-lg bg-white dark:bg-black"
+            tw="mb-4 p-4 ml-4 rounded-lg bg-white dark:bg-black"
           >
             <View tw="mb-4">
               <Text tw=" text-lg !leading-normal !my-0 font-semibold text-gray-900 dark:text-white">

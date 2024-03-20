@@ -47,10 +47,10 @@ export function AnimateHeight({
     () => ({
       opacity: withTiming(
         !measuredHeight.value || hide ? 0 : 1,
-        getTransition(shouldAnimate || shouldAnimateOnMount)
+        getTransition(true)
       ),
     }),
-    [hide, measuredHeight, shouldAnimate, shouldAnimateOnMount]
+    [hide, measuredHeight]
   )
 
   const containerStyle = useAnimatedStyle(() => {
@@ -58,7 +58,7 @@ export function AnimateHeight({
       willChange: 'transform, scroll-position, contents', // make it hardware accelerated on web
       height: withTiming(
         hide ? 0 : measuredHeight.value + extraHeight,
-        getTransition(shouldAnimate || shouldAnimateOnMount),
+        getTransition(true),
         () => {
           if (onHeightDidAnimate) {
             runOnJS(onHeightDidAnimate)(measuredHeight.value + extraHeight)
@@ -75,8 +75,9 @@ export function AnimateHeight({
   // visible
   if (!hide && !shouldAnimate) {
     return (
-      <Animated.View style={[style]}>
+      <Animated.View style={[styles.hidden]}>
         <Animated.View
+          style={[styles.autoBottom]}
           onLayout={({ nativeEvent }) => {
             measuredHeight.value = Math.ceil(nativeEvent.layout.height)
           }}
@@ -88,9 +89,15 @@ export function AnimateHeight({
   }
 
   return (
-    <Animated.View style={[styles.hidden, style, containerStyle]}>
+    <Animated.View
+      style={[styles.hidden, style, shouldAnimate && containerStyle]}
+    >
       <Animated.View
-        style={[StyleSheet.absoluteFill, styles.autoBottom, childStyle]}
+        style={[
+          StyleSheet.absoluteFill,
+          styles.autoBottom,
+          shouldAnimate && childStyle,
+        ]}
         onLayout={({ nativeEvent }) => {
           measuredHeight.value = Math.ceil(nativeEvent.layout.height)
         }}

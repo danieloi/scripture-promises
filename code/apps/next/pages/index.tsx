@@ -43,7 +43,7 @@ const Index = ({ data }: IndexProps) => {
           return (
             <Accordion.Item
               tw="mb-4"
-              key={superCategory.id}
+              key={`s.${superCategory.id}`}
               value={superCategory.name}
             >
               <Accordion.Trigger>
@@ -57,7 +57,10 @@ const Index = ({ data }: IndexProps) => {
                 >
                   {superCategory.categories.map((category) => {
                     return (
-                      <Accordion.Item key={category.id} value={category.name}>
+                      <Accordion.Item
+                        key={`c.${category.id}`}
+                        value={category.name}
+                      >
                         <Accordion.Trigger>
                           <Accordion.Label>{category.name}</Accordion.Label>
                           <Accordion.Chevron lighter />
@@ -66,10 +69,10 @@ const Index = ({ data }: IndexProps) => {
                           {category.subCategories.map((subCategory) => {
                             return (
                               <TextLink
-                                className='"pl-4 p-4 mb-2 '
+                                className='"pl-4 p-4  '
                                 href={`/subcategories/${subCategory.id}`}
                                 tw=" font-semibold text-gray-900 dark:text-white"
-                                key={subCategory.id}
+                                key={`sc.${subCategory.id}`}
                               >
                                 {subCategory.name}
                               </TextLink>

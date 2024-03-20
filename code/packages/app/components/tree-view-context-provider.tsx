@@ -1,7 +1,13 @@
 import React from 'react'
 import { TreeViewContext } from 'app/components/tree-view-context'
 
-export const TreeViewContextProvider = ({ children }) => {
+type TreeViewContextProviderProps = {
+  children: React.ReactNode
+}
+
+export const TreeViewContextProvider = ({
+  children,
+}: TreeViewContextProviderProps) => {
   const [selectedSuperCategory, setSelectedSuperCategory] = React.useState('')
   const [selectedCategory, setSelectedCategory] = React.useState('')
 

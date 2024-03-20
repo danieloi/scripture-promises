@@ -3,12 +3,12 @@ export {
   useNavigation,
   useNavigationState,
   StackActions,
-  NavigationState,
   useScrollToTop,
   useIsFocused,
   useFocusEffect,
   NavigationContainer,
-  LinkingOptions,
   useLinkProps,
   getStateFromPath,
-} from "@react-navigation/native";
+} from '@react-navigation/native'
+
+export type { NavigationState, LinkingOptions } from '@react-navigation/native'

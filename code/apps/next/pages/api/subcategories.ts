@@ -1,15 +1,10 @@
 import data from '../../../data.json'
-import {
-  SubcategoryDetailData,
-  Promise,
-  SubCategory,
-  Category,
-} from '../../../../types'
+import { SubcategoryDetailData, Promise, SubCategory } from '../../../../types'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 const promises = [...data.promises] as Promise[]
 const subCategories = [...data.subCategories] as SubCategory[]
-const categories = [...data.categories] as Category[]
+// const categories = [...data.categories] as Category[]
 
 export default function handler(
   req: NextApiRequest,
@@ -28,10 +23,10 @@ function getCategoryDetailData(id: string) {
     id: '',
     categoryId: '',
   }
-  const category = categories.find((c) => c.id == subCategory.categoryId) || {
-    name: '',
-    id: '',
-  }
+  // const category = categories.find((c) => c.id == subCategory.categoryId) || {
+  //   name: '',
+  //   id: '',
+  // }
 
   return {
     id: parseInt(id),

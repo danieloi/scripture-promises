@@ -14,7 +14,13 @@
       "@showtime-xyz/universal.router": ["./design-system/router"],
       "@showtime-xyz/universal.view": ["./design-system/view"],
       "@showtime-xyz/universal.text": ["./design-system/text"],
+      "@showtime-xyz/universal.text-input": ["./design-system/text-input"],
+      "@showtime-xyz/universal.input": ["./design-system/input"],
+      "@showtime-xyz/universal.label": ["./design-system/label"],
       "@showtime-xyz/universal.hooks": ["./design-system/hooks"],
+      "@showtime-xyz/universal.pressable-scale": [
+        "./design-system/pressable-scale"
+      ],
       "@showtime-xyz/universal.accordion": ["./design-system/accordion"],
       "@showtime-xyz/universal.color-scheme": ["./design-system/color-scheme"],
       "@showtime-xyz/universal.utils": ["./design-system/utils"]

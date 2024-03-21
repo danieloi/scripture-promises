@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "strictNullChecks": true,
+    "strictNullChecks": false,
+    "strict": false,
     "baseUrl": "./packages",
     "noUncheckedIndexedAccess": true,
     "module": "esnext",

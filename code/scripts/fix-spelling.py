@@ -14,14 +14,11 @@ def spell_check(text):
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a bible verse editor, correcting spelling and grammar."},
-                {"role": "user", "content": "Correct the spelling and grammar in this bible verse {text}"}
+                {"role": "user", "content": f"Correct the spelling and grammar in this bible verse in KJV. Return just the verse without any references: {text}"}
             ],
-
-            temperature=0.1,
             max_tokens=3000
         )
-        return response.choices[0].message.strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         print(f"Error during spell checking: {e}")
         return text

@@ -40,14 +40,15 @@ const embeddingFn = async (str: string) => {
 const myDB = new SmolVector(embeddingFn)
 
 async function search(query) {
-    const val = await myDB.query({ query, store: promisesData });
-    const subCatVal = await myDB.query({ query, store: subCategoriesData });
-    return { val, subCatVal }
+  const val = await myDB.query({ query, store: promisesData })
+  const subCatVal = await myDB.query({ query, store: subCategoriesData })
+  return { val, subCatVal }
 }
 
 // const { val, subCatVal } = await search('healing');
-const { val, subCatVal } = await search('The lines are fallen unto me in pleasant places;');
-
+const { val, subCatVal } = await search(
+  'The LORD God is a sun and shield: the LORD will give grace and glory:'
+)
 
 console.log(
   val.slice(0, 50).map(
@@ -59,7 +60,5 @@ console.log(
     ({ embedding, ...item }) => item
   )
 )
-
-
 
 console.log('done ✅')

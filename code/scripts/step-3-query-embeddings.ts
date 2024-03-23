@@ -45,7 +45,8 @@ async function search(query) {
     return { val, subCatVal }
 }
 
-const { val, subCatVal } = await search('healing');
+// const { val, subCatVal } = await search('healing');
+const { val, subCatVal } = await search('The lines are fallen unto me in pleasant places;');
 
 
 console.log(

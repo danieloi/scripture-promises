@@ -49,6 +49,11 @@ export type IndexData = {
   categories: CategoryData[]
 }
 
+export type SearchResult = {
+  val: any
+  subCatVal: any
+}
+
 export type SubcategoryDetailData = {
   id: number
   name: string

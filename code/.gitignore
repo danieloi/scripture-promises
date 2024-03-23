@@ -82,3 +82,4 @@ build/**
 !.yarn/versions
 
 /scripts/scripture-scripts-env
+/scripts/.env

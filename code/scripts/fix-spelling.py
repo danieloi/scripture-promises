@@ -25,7 +25,7 @@ def spell_check(text):
 
 def main():
     # Load the JSON data
-    with open('scripts/output.json', 'r') as file:
+    with open('output.json', 'r') as file:
         data = json.load(file)
 
     # Iterate through each item and spell check the 'quote' and 'reference'
@@ -39,7 +39,7 @@ def main():
         print(f"Corrected: {corrected_quote} - {corrected_reference}")
 
     # Save the corrected data back to the file (or a new file)
-    with open('scripts/output_corrected.json', 'w') as file:
+    with open('output_corrected.json', 'w') as file:
         json.dump(data, file, indent=4)
 
 if __name__ == "__main__":

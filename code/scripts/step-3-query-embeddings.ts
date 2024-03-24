@@ -47,7 +47,7 @@ async function search(query) {
 
 // const { val, subCatVal } = await search('healing');
 const { val, subCatVal } = await search(
-  'The LORD God is a sun and shield: the LORD will give grace and glory:'
+  'You open your hand and satisfy the desires of every living thing.'
 )
 
 console.log(

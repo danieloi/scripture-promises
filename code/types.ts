@@ -59,3 +59,8 @@ export type SubcategoryDetailData = {
   name: string
   promises: Promise[]
 }
+
+export type SubcategoryNavigation = {
+  prev?: { id: number; name: string }
+  next?: { id: number; name: string }
+}

@@ -11,8 +11,11 @@
       "@showtime-xyz/universal": ["./design-system"],
       "@showtime-xyz/universal.tailwind": ["./design-system/tailwind"],
       "@showtime-xyz/universal.pressable": ["./design-system/pressable"],
+      "@showtime-xyz/universal.bottom-sheet": ["./design-system/bottom-sheet"],
+      "@showtime-xyz/universal.button": ["./design-system/button"],
       "@showtime-xyz/universal.router": ["./design-system/router"],
       "@showtime-xyz/universal.view": ["./design-system/view"],
+      "@showtime-xyz/universal.icon": ["./design-system/icon"],
       "@showtime-xyz/universal.text": ["./design-system/text"],
       "@showtime-xyz/universal.text-input": ["./design-system/text-input"],
       "@showtime-xyz/universal.input": ["./design-system/input"],
@@ -21,6 +24,8 @@
       "@showtime-xyz/universal.pressable-scale": [
         "./design-system/pressable-scale"
       ],
+      "@showtime-xyz/universal.select": ["./design-system/select"],
+
       "@showtime-xyz/universal.accordion": ["./design-system/accordion"],
       "@showtime-xyz/universal.color-scheme": ["./design-system/color-scheme"],
       "@showtime-xyz/universal.utils": ["./design-system/utils"]

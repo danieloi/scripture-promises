@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/next-adapter": "5.0.2",
+    "@radix-ui/react-select": "^2.0.0",
     "@xenova/transformers": "^2.16.1",
     "app": "*",
     "next": "^13.4.19",

@@ -29,8 +29,8 @@ export const NavigationLinks: React.FC<NavigationLinkProps> = ({
       {navigation.next && (
         <TextLink href={`/subcategories/${navigation.next.id}`}>
           <View tw="flex items-end">
-            <Text tw="text-gray-900 dark:text-white mb-1">Next</Text>
-            <Text tw="pt-2 text-gray-900 dark:text-white font-semibold">
+            <Text tw="text-gray-900 dark:text-white mb-1 text-right">Next</Text>
+            <Text tw="pt-2 text-gray-900 dark:text-white font-semibold text-right ">
               {navigation.next.name}
             </Text>
           </View>

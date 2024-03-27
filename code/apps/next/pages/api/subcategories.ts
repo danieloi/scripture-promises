@@ -76,6 +76,7 @@ function getSubcategoryBreadcrumbs(id: string): SubcategoryBreadcrumbs {
     name: '',
     id: '',
     superCategoryId: '',
+    placeholder: false,
   }
 
   const supercategory = superCategories.find(
@@ -85,6 +86,22 @@ function getSubcategoryBreadcrumbs(id: string): SubcategoryBreadcrumbs {
     id: '',
   }
 
+  // Find siblings
+  const categorySiblings = categories
+    .filter((c) => c.superCategoryId === category.superCategoryId)
+    .map((c) => ({
+      name: c.name,
+      id: c.id,
+      firstSubcategoryId: getFirstSubcategoryIdForCategory(c.id),
+    }))
+
+  const subCategorySiblings = subCategories
+    .filter((sc) => sc.categoryId === category.id)
+    .map((sc) => ({
+      name: sc.name,
+      id: sc.id,
+    }))
+
   return {
     supercategoryName: supercategory.name,
     categoryName: category.name,
@@ -92,9 +109,34 @@ function getSubcategoryBreadcrumbs(id: string): SubcategoryBreadcrumbs {
     path: [
       {
         name: supercategory.name,
+        siblings: superCategories.map((s) => ({
+          name: s.name,
+          id: s.id,
+          firstSubcategoryId: getFirstSubcategoryIdForSupercategory(s.id),
+        })),
       },
-      { name: category.name },
-      { name: subCategory.name },
+      {
+        name: category.name,
+        isLeaf: category.placeholder,
+        siblings: categorySiblings,
+      },
+      { name: subCategory.name, siblings: subCategorySiblings },
     ],
   }
+}
+
+function getFirstSubcategoryIdForSupercategory(
+  supercategoryId: number
+): number {
+  // Find the first category that belongs to the supercategory
+  const category = categories.find((c) => c.superCategoryId === supercategoryId)
+
+  // Find the first subcategory that belongs to the found category
+  const subCategory = subCategories.find((sc) => sc.categoryId === category.id)
+  return subCategory.id
+}
+
+function getFirstSubcategoryIdForCategory(categoryId: number): number {
+  const subCategory = subCategories.find((sc) => sc.categoryId === categoryId)
+  return subCategory.id
 }

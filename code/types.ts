@@ -17,6 +17,7 @@ export type Category = {
   id: number
   name: string
   superCategoryId: number
+  placeholder?: boolean
 }
 
 export type SubCategory = {
@@ -40,6 +41,7 @@ type SubCategoryData = {
 type CategoryData = {
   id: number
   name: string
+  isLeaf?: boolean
   subCategories: SubCategoryData[]
 }
 
@@ -72,7 +74,9 @@ export type SubcategoryBreadcrumbs = {
   path: SubcategoryBreadcrumbsPath[]
 }
 
-type SubcategoryBreadcrumbsPath = {
+export type SubcategoryBreadcrumbsPath = {
   name: string
   href?: string
+  isLeaf?: boolean
+  siblings?: { name: string; id: number; firstSubcategoryId?: number }[]
 }

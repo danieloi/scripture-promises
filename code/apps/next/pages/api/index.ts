@@ -33,6 +33,7 @@ function getIndexData() {
       .map((c) => ({
         id: c.id,
         name: c.name,
+        isLeaf: c.placeholder,
         subCategories: subCategories
           .filter((sc) => sc.categoryId == c.id)
           .map((sc) => ({

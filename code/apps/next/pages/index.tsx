@@ -56,6 +56,24 @@ const Index = ({ data }: IndexProps) => {
                   value={selectedCategory}
                 >
                   {superCategory.categories.map((category) => {
+                    if (category.isLeaf) {
+                      const subCategory = category.subCategories[0]
+                      return (
+                        <Accordion.Item
+                          key={`c.${category.id}`}
+                          value={category.name}
+                        >
+                          <TextLink
+                            className="pl-4 p-4 "
+                            href={`/subcategories/${subCategory.id}`}
+                            tw=" font-semibold text-gray-900 dark:text-white"
+                            key={`sc.${subCategory.id}`}
+                          >
+                            {subCategory.name}
+                          </TextLink>
+                        </Accordion.Item>
+                      )
+                    }
                     return (
                       <Accordion.Item
                         key={`c.${category.id}`}

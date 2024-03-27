@@ -2,21 +2,37 @@ import { SubCategoryDetailScreen } from 'app/screens/sub-category-detail-screen'
 import getApiUrl from '../../../../utils/getApiUrl'
 import urlWithQuery from '../../../../utils/urlWithQuery'
 import { NextPageContext } from 'next'
-import { SubcategoryDetailData, SubcategoryNavigation } from '../../../../types' // Assuming SubcategoryNavigation is a new type you've defined
+import {
+  SubcategoryBreadcrumbs,
+  SubcategoryDetailData,
+  SubcategoryNavigation,
+} from '../../../../types'
 import { PageContainer } from 'app/components/page-container'
 import { NavigationLinks } from 'app/components/navigation-links'
+import { Breadcrumbs } from 'app/components/breadcrumbs' // Import the Breadcrumbs component
+import { View } from '@showtime-xyz/universal.view'
 
 type CategoryDetailProps = {
   data: SubcategoryDetailData
-  navigation: SubcategoryNavigation // Assuming this includes next and previous subcategory info
+  navigation: SubcategoryNavigation
+  breadcrumbs: SubcategoryBreadcrumbs
 }
 
-const SubCategoryDetail = ({ data, navigation }: CategoryDetailProps) => {
+const SubCategoryDetail = ({
+  data,
+  navigation,
+  breadcrumbs,
+}: CategoryDetailProps) => {
   return (
-    <PageContainer>
-      <SubCategoryDetailScreen data={data} />
-      <NavigationLinks navigation={navigation} />
-    </PageContainer>
+    <>
+      <View tw={' bg-gray-100 pt-4 md:pt-8 dark:bg-gray-900'}>
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+      </View>
+      <PageContainer>
+        <SubCategoryDetailScreen data={data} />
+        <NavigationLinks navigation={navigation} />
+      </PageContainer>
+    </>
   )
 }
 
@@ -29,6 +45,7 @@ SubCategoryDetail.getInitialProps = async (ctx: NextPageContext) => {
   return {
     data: result.data,
     navigation: result.navigation,
+    breadcrumbs: result.breadcrumbs,
   }
 }
 

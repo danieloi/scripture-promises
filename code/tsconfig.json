@@ -15,6 +15,7 @@
       "@showtime-xyz/universal.button": ["./design-system/button"],
       "@showtime-xyz/universal.router": ["./design-system/router"],
       "@showtime-xyz/universal.view": ["./design-system/view"],
+      "@showtime-xyz/universal.scroll-view": ["./design-system/scroll-view"],
       "@showtime-xyz/universal.icon": ["./design-system/icon"],
       "@showtime-xyz/universal.text": ["./design-system/text"],
       "@showtime-xyz/universal.text-input": ["./design-system/text-input"],

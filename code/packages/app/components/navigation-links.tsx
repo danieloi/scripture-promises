@@ -11,7 +11,11 @@ export const NavigationLinks: React.FC<NavigationLinkProps> = ({
   navigation,
 }) => {
   return (
-    <View tw="flex flex-1 flex-row justify-between mt-5 max-w-3xl mb-24">
+    <View
+      tw={`flex flex-1 flex-row ${
+        navigation.prev ? 'justify-between' : 'justify-end'
+      } mt-5 max-w-3xl mb-24`}
+    >
       {navigation.prev && (
         <TextLink href={`/subcategories/${navigation.prev.id}`}>
           <View>

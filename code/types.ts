@@ -64,3 +64,15 @@ export type SubcategoryNavigation = {
   prev?: { id: number; name: string }
   next?: { id: number; name: string }
 }
+
+export type SubcategoryBreadcrumbs = {
+  supercategoryName: string
+  categoryName: string
+  subcategoryName: string
+  path: SubcategoryBreadcrumbsPath[]
+}
+
+type SubcategoryBreadcrumbsPath = {
+  name: string
+  href?: string
+}

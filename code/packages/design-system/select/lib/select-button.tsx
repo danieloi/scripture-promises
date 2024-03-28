@@ -1,42 +1,45 @@
-import React, { forwardRef, useMemo } from "react";
-import { Pressable } from "react-native";
+import React, { forwardRef, useMemo } from 'react'
+import { Pressable } from 'react-native'
 
-import Animated, { useAnimatedStyle } from "react-native-reanimated";
+import Animated, { useAnimatedStyle } from 'react-native-reanimated'
 
 import {
   useIsDarkMode,
   useOnHover,
   useOnPress,
-} from "@showtime-xyz/universal.hooks";
-import { colors } from "@showtime-xyz/universal.tailwind";
-import { Text } from "@showtime-xyz/universal.text";
+} from '@showtime-xyz/universal.hooks'
+import { colors } from '@showtime-xyz/universal.tailwind'
+import { Text } from '@showtime-xyz/universal.text'
 
-import { SelectProps } from "../types";
-import { ChevronDownIcon } from "./chevron-down-icon";
+import { SelectProps } from '../types'
+import { ChevronDownIcon } from './chevron-down-icon'
 
-interface SelectButtonProps extends Pick<SelectProps<any>, "size"> {
-  open: boolean;
-  label: string;
-  disabled?: boolean;
-  onClick?: () => void;
-  onPress?: () => void;
+interface SelectButtonProps extends Pick<SelectProps<any>, 'size' | 'minimal'> {
+  open: boolean
+  label: string
+  disabled?: boolean
+  onClick?: () => void
+  onPress?: () => void
 }
 
 const BACKGROUND_MAPPER = {
   default: [colors.black, colors.white],
   hover: [colors.gray[800], colors.gray[200]],
   pressed: [colors.gray[700], colors.gray[300]],
-};
+}
 
 export const SelectButton: React.FC<SelectButtonProps> = forwardRef(
-  ({ label, open, disabled, size, onPress, onClick, ...rest }, ref) => {
+  (
+    { label, open, disabled, size, minimal, onPress, onClick, ...rest },
+    ref
+  ) => {
     //#region hooks
-    const isDarkMode = useIsDarkMode();
-    const { onHoverIn, onHoverOut, hovered } = useOnHover();
-    const { onPressIn, onPressOut, pressed } = useOnPress();
+    const isDarkMode = useIsDarkMode()
+    const { onHoverIn, onHoverOut, hovered } = useOnHover()
+    const { onPressIn, onPressOut, pressed } = useOnPress()
     //#endregion
 
-    const iconSize = useMemo(() => (size === "regular" ? 30 : 16), [size]);
+    const iconSize = useMemo(() => (size === 'regular' ? 30 : 16), [size])
 
     //#region styles
     const containerAnimatedStyle = useAnimatedStyle(
@@ -49,26 +52,26 @@ export const SelectButton: React.FC<SelectButtonProps> = forwardRef(
           : BACKGROUND_MAPPER.default[isDarkMode ? 0 : 1],
       }),
       [isDarkMode, hovered, pressed, disabled]
-    );
+    )
 
     const containerStyle = useMemo(
       () => [
         {
-          paddingVertical: size === "regular" ? 11 : 7,
+          paddingVertical: size === 'regular' ? 11 : 7,
           paddingLeft: 16,
           paddingRight: 8,
           borderRadius: 9999,
           borderWidth: 1,
           borderColor: isDarkMode ? colors.gray[800] : colors.gray[200],
           // Not sure why TS is not happy with the type of the styles below
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         },
         containerAnimatedStyle,
       ],
       [containerAnimatedStyle, size, isDarkMode]
-    );
+    )
     //#endregion
 
     return (
@@ -90,22 +93,24 @@ export const SelectButton: React.FC<SelectButtonProps> = forwardRef(
         >
           <Text
             tw={[
-              "mr-2 font-bold text-gray-900 dark:text-white",
-              size === "regular" ? "text-sm" : "text-xs",
+              'mr-2 font-bold text-gray-900 dark:text-white',
+              size === 'regular' ? 'text-sm' : 'text-xs',
             ]}
           >
             {label}
           </Text>
-          <ChevronDownIcon
-            height={iconSize}
-            width={iconSize}
-            open={open}
-            aria-hidden="true"
-          />
+          {!minimal && (
+            <ChevronDownIcon
+              height={iconSize}
+              width={iconSize}
+              open={open}
+              aria-hidden={true}
+            />
+          )}
         </Animated.View>
       </Pressable>
-    );
+    )
   }
-);
+)
 
-SelectButton.displayName = "SelectButton";
+SelectButton.displayName = 'SelectButton'

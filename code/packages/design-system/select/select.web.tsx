@@ -1,49 +1,50 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from 'react'
 
-import * as RadixSelect from "@radix-ui/react-select";
+import * as RadixSelect from '@radix-ui/react-select'
 
 import {
   useIsDarkMode,
   useWebClientRect,
   usePlatformResize,
   useWebScroll,
-} from "@showtime-xyz/universal.hooks";
+} from '@showtime-xyz/universal.hooks'
 
-import { SelectButton } from "./lib/select-button";
-import { SelectItem } from "./lib/select-item";
-import type { SelectProps } from "./types";
+import { SelectButton } from './lib/select-button'
+import { SelectItem } from './lib/select-item'
+import type { SelectProps } from './types'
 
 const DROPDOWN_LIGHT_SHADOW =
-  "0px 12px 16px rgba(0, 0, 0, 0.1), 0px 16px 48px rgba(0, 0, 0, 0.1)";
+  '0px 12px 16px rgba(0, 0, 0, 0.1), 0px 16px 48px rgba(0, 0, 0, 0.1)'
 const DROPDOWN_DRAK_SHADOW =
-  "0px 0px 2px rgba(255, 255, 255, 0.5), 0px 16px 48px rgba(255, 255, 255, 0.2)";
+  '0px 0px 2px rgba(255, 255, 255, 0.5), 0px 16px 48px rgba(255, 255, 255, 0.2)'
 
 export function Select<T extends string>({
-  size = "regular",
+  size = 'regular',
+  minimal = false,
   value,
-  placeholder = "Select item",
+  placeholder = 'Select item',
   options,
   disabled,
   onChange,
 }: SelectProps<T>) {
-  const isDark = useIsDarkMode();
-  const [open, setOpen] = useState(false);
-  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const isDark = useIsDarkMode()
+  const [open, setOpen] = useState(false)
+  const triggerRef = useRef<HTMLButtonElement | null>(null)
 
-  const [triggerRect, updateTriggerRect] = useWebClientRect(triggerRef);
+  const [triggerRect, updateTriggerRect] = useWebClientRect(triggerRef)
 
-  usePlatformResize(updateTriggerRect);
-  useWebScroll(triggerRef, updateTriggerRect);
+  usePlatformResize(updateTriggerRect)
+  useWebScroll(triggerRef, updateTriggerRect)
 
-  if (!options) return null;
+  if (!options) return null
 
   return (
     <RadixSelect.Root
       value={value}
       open={open}
       onOpenChange={(open: boolean) => {
-        updateTriggerRect();
-        setOpen(open);
+        updateTriggerRect()
+        setOpen(open)
       }}
       onValueChange={onChange}
     >
@@ -51,6 +52,7 @@ export function Select<T extends string>({
         <SelectButton
           size={size}
           open={open}
+          minimal={minimal}
           label={
             value !== undefined
               ? options?.filter((t) => t.value === value)?.[0]?.label ??
@@ -62,9 +64,9 @@ export function Select<T extends string>({
       <RadixSelect.Portal>
         <RadixSelect.Content
           style={{
-            position: "fixed",
-            maxHeight: "50vh",
-            backgroundColor: isDark ? "#000" : "#fff",
+            position: 'fixed',
+            maxHeight: '50vh',
+            backgroundColor: isDark ? '#000' : '#fff',
             borderRadius: 16,
             padding: 4,
             boxShadow: isDark ? DROPDOWN_DRAK_SHADOW : DROPDOWN_LIGHT_SHADOW,
@@ -80,7 +82,7 @@ export function Select<T extends string>({
               <SelectItem
                 {...item}
                 onClick={() => {
-                  onChange(item.value);
+                  onChange(item.value)
                 }}
               />
             </RadixSelect.Item>
@@ -88,5 +90,5 @@ export function Select<T extends string>({
         </RadixSelect.Content>
       </RadixSelect.Portal>
     </RadixSelect.Root>
-  );
+  )
 }

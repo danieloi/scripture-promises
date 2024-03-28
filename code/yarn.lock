@@ -4227,6 +4227,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^1.7.18":
+  version: 1.7.18
+  resolution: "@headlessui/react@npm:1.7.18"
+  dependencies:
+    "@tanstack/react-virtual": ^3.0.0-beta.60
+    client-only: ^0.0.1
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: 7463167b4cf2ad57f92c2deedd6429a245dfc4d979ead5533d2e83429e3e4dd39c346e5a8fd958e6bd9e2fba42486af97577b7dd3137f5a797dacc93632578ba
+  languageName: node
+  linkType: hard
+
 "@httptoolkit/websocket-stream@npm:^6.0.1":
   version: 6.0.1
   resolution: "@httptoolkit/websocket-stream@npm:6.0.1"
@@ -6589,6 +6602,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/react-virtual@npm:^3.0.0-beta.60":
+  version: 3.2.0
+  resolution: "@tanstack/react-virtual@npm:3.2.0"
+  dependencies:
+    "@tanstack/virtual-core": 3.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 09bf6db0f3dbfa2245c7d78ed425bb7c0e169cbe5024cc6bfc53005505a472b36a0b5506d6fa4b8a47c07296c5982b1ac49acd4f32c48547aef7556f9ed2ed1d
+  languageName: node
+  linkType: hard
+
+"@tanstack/virtual-core@npm:3.2.0":
+  version: 3.2.0
+  resolution: "@tanstack/virtual-core@npm:3.2.0"
+  checksum: 33ce09ba65852413251156e3e70ef3bd320e60f586b734b0ae36ff07259f99b5e4c1082e2ba7870364438a8be306ad9eed28a3c1b5e1d9022645c556bc4ff0c3
+  languageName: node
+  linkType: hard
+
 "@theme-ui/css@npm:^0.4.0-rc.1":
   version: 0.4.0-rc.13
   resolution: "@theme-ui/css@npm:0.4.0-rc.13"
@@ -8527,7 +8559,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client-only@npm:0.0.1":
+"client-only@npm:0.0.1, client-only@npm:^0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 0c16bf660dadb90610553c1d8946a7fdfb81d624adea073b8440b7d795d5b5b08beb3c950c6a2cf16279365a3265158a236876d92bce16423c485c322d7dfaf8
@@ -14356,6 +14388,7 @@ __metadata:
   resolution: "next-app@workspace:apps/next"
   dependencies:
     "@expo/next-adapter": 5.0.2
+    "@headlessui/react": ^1.7.18
     "@radix-ui/react-select": ^2.0.0
     "@types/node": 17.0.21
     "@xenova/transformers": ^2.16.1

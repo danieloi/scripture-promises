@@ -52,8 +52,8 @@ export type IndexData = {
 }
 
 export type SearchResultData = {
-  val: any
-  subCatVal: any
+  val: Promise[]
+  subCatVal: SubCategory[]
 }
 
 export type SubcategoryDetailData = {
@@ -61,6 +61,8 @@ export type SubcategoryDetailData = {
   name: string
   promises: Promise[]
 }
+
+export type PromiseData = Promise[]
 
 export type SubcategoryNavigation = {
   prev?: { id: number; name: string }

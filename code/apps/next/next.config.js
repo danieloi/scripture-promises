@@ -23,6 +23,7 @@ const nextConfig = {
     'nativewind',
     '@expo/html-elements',
     'react-native-gesture-handler',
+    'expo-linear-gradient',
   ],
 }
 

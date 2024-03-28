@@ -11,6 +11,9 @@
       "@showtime-xyz/universal": ["./design-system"],
       "@showtime-xyz/universal.tailwind": ["./design-system/tailwind"],
       "@showtime-xyz/universal.pressable": ["./design-system/pressable"],
+      "@showtime-xyz/universal.pressable-hover": [
+        "./design-system/pressable-hover"
+      ],
       "@showtime-xyz/universal.bottom-sheet": ["./design-system/bottom-sheet"],
       "@showtime-xyz/universal.button": ["./design-system/button"],
       "@showtime-xyz/universal.router": ["./design-system/router"],
@@ -22,6 +25,10 @@
       "@showtime-xyz/universal.input": ["./design-system/input"],
       "@showtime-xyz/universal.label": ["./design-system/label"],
       "@showtime-xyz/universal.hooks": ["./design-system/hooks"],
+      "@showtime-xyz/universal.modal": ["./design-system/modal"],
+      "@showtime-xyz/universal.modal-screen": ["./design-system/modal-screen"],
+      "@showtime-xyz/universal.modal-sheet": ["./design-system/modal-sheet"],
+
       "@showtime-xyz/universal.pressable-scale": [
         "./design-system/pressable-scale"
       ],

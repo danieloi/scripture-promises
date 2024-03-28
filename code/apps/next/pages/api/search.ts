@@ -1,14 +1,15 @@
 import promisesData from '../../../promises-w-embeddings.json'
 import subCategoriesData from '../../../sub-categories-w-embeddings.json'
 
-import { SearchResultData } from '../../../../types'
+import { PromiseData, SearchResultData, SubCategory } from '../../../../types'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<SearchResultData>
 ) {
-  const result = await search('healing')
+  const { query } = req.body
+  const result = await search(query)
 
   // console.dir(data, { depth: null })
   return res.status(200).json(result)
@@ -53,7 +54,10 @@ const embeddingFn = async (str: string) => {
 const myDB = new SmolVector(embeddingFn)
 
 async function search(query) {
-  const val = await myDB.query({ query, store: promisesData })
-  const subCatVal = await myDB.query({ query, store: subCategoriesData })
-  return { val, subCatVal }
+  const val: PromiseData = await myDB.query({ query, store: promisesData })
+  const subCatVal: SubCategory[] = await myDB.query({
+    query,
+    store: subCategoriesData,
+  })
+  return { val: val.slice(0, 10), subCatVal: subCatVal.slice(0, 10) }
 }

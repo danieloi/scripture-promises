@@ -10,8 +10,17 @@ const subCategories = data.subCategories.map((subCategory, index) => {
 
 data.subCategories = subCategories
 
+// already done so commented out
+// const updatedPromises = data.promises.map((promise) => {
+//   if (promise.id >= 1550) {
+//     return { ...promise, subCategoryId: promise.subCategoryId + 1 }
+//   }
+//   return promise
+// })
+
+// run prior commented out code first before this
 const updatedPromises = data.promises.map((promise) => {
-  if (promise.id >= 1550) {
+  if (promise.id >= 1632) {
     return { ...promise, subCategoryId: promise.subCategoryId + 1 }
   }
   return promise

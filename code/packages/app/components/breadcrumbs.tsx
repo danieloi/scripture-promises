@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   SubcategoryBreadcrumbs,
   SubcategoryBreadcrumbsPath,
 } from '../../../types'
 import { TextLink } from 'app/navigation/link'
+import { Text } from '@showtime-xyz/universal.text'
 import { View } from '@showtime-xyz/universal.view'
 import { ChevronRightIcon } from './chevron-right-icon'
 import { ScrollView } from '@showtime-xyz/universal.scroll-view'
@@ -17,37 +18,19 @@ type BreadcrumbsProps = {
 const homePath: SubcategoryBreadcrumbsPath = { name: 'Home', href: '/' }
 export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ breadcrumbs }) => {
   const router = useRouter()
-  const [isScrolling, setIsScrolling] = useState(false)
 
   const handleSelectChange = (selectedId: number) => {
     // Logic to navigate to the selected sibling
     router.push(`/subcategories/${selectedId}`)
   }
 
-  const handleTouchStart = () => {
-    setIsScrolling(false)
-  }
-
-  const handleTouchMove = () => {
-    setIsScrolling(true)
-  }
-
-  const handleTouchEnd = () => {
-    // Optionally, you could set a timeout here to reset isScrolling after a delay
-    // to ensure that a tap after scrolling does not trigger the dropdown.
-    setIsScrolling(false)
-  }
-
   return (
     <ScrollView
-      tw="w-full"
+      // so we can scroll without triggering
+      // the select component on mobile
+      tw="w-full md:pb-0 pt-8 pb-8"
       horizontal
       aria-label="breadcrumb"
-      // onScrollBeginDrag={() => setIsScrolling(true)}
-      // onScrollEndDrag={() => setIsScrolling(false)}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
       showsHorizontalScrollIndicator={false}
     >
       {[homePath, ...breadcrumbs.path].map((path, index) => {
@@ -62,15 +45,12 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ breadcrumbs }) => {
               index === breadcrumbs.path.length ? 'pr-10' : ''
             }`}
           >
-            {path.href ? (
-              <TextLink
-                style={{ flexShrink: 0 }}
-                href={path.href}
-                tw="text-gray-900 dark:text-white"
-              >
+            {path.href && (
+              <TextLink href={path.href} tw="text-gray-900 dark:text-white">
                 {path.name}
               </TextLink>
-            ) : (
+            )}
+            {!path.href && path?.siblings?.length !== 1 && (
               <Select
                 options={path.siblings.map((sibling) => ({
                   label: sibling.name,
@@ -80,10 +60,10 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ breadcrumbs }) => {
                 size="small"
                 placeholder={path.name}
                 minimal
-                // disabled={isScrolling}
-                // disabled
               />
-              // <Text tw="text-gray-900 dark:text-white">{path.name}</Text>
+            )}
+            {!path.href && path?.siblings?.length === 1 && (
+              <Text tw="text-gray-9000 dark:text-white">{path.name}</Text>
             )}
             {index < breadcrumbs.path.length && (
               <View tw="ml-2 mr-2">

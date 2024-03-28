@@ -25,7 +25,7 @@ const SubCategoryDetail = ({
 }: CategoryDetailProps) => {
   return (
     <>
-      <View tw={' bg-gray-100 pt-4 md:pt-8 dark:bg-gray-900'}>
+      <View tw={' bg-gray-100 dark:bg-gray-900'}>
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </View>
       <PageContainer>

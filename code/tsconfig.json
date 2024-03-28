@@ -25,6 +25,7 @@
       "@showtime-xyz/universal.pressable-scale": [
         "./design-system/pressable-scale"
       ],
+      "@showtime-xyz/universal.safe-area": ["./design-system/safe-area"],
       "@showtime-xyz/universal.select": ["./design-system/select"],
 
       "@showtime-xyz/universal.accordion": ["./design-system/accordion"],

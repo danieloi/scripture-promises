@@ -10,7 +10,7 @@ type SubCategoryDetailScreenProps = {
 export const SubCategoryDetailScreen: React.FC<SubCategoryDetailScreenProps> =
   withColorScheme(({ data }) => {
     return (
-      <View tw="p-4 bg-white dark:bg-black max-w-3xl rounded-2xl">
+      <View tw="p-4 bg-white dark:bg-black rounded-2xl">
         <View tw="p-4">
           <Text tw="text-base font-bold !leading-relaxed !my-0 text-gray-900 dark:text-white">
             {data.name}

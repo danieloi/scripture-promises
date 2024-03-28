@@ -1,22 +1,18 @@
-import promisesData from '../../../promises-w-embeddings.json';
-import subCategoriesData from '../../../sub-categories-w-embeddings.json';
+import promisesData from '../../../promises-w-embeddings.json'
+import subCategoriesData from '../../../sub-categories-w-embeddings.json'
 
-import {
-  IndexData,
-} from '../../../../types'
+import { SearchResultData } from '../../../../types'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<IndexData[]>
+  res: NextApiResponse<SearchResultData>
 ) {
-  const result = await search('healing');
+  const result = await search('healing')
 
   // console.dir(data, { depth: null })
   return res.status(200).json(result)
 }
-
-
 
 const dot = (a, b) => a.reduce((acc, v, i) => acc + v * b[i], 0)
 const norm = (a) => Math.sqrt(a.reduce((acc, v) => acc + v * v, 0))
@@ -57,7 +53,7 @@ const embeddingFn = async (str: string) => {
 const myDB = new SmolVector(embeddingFn)
 
 async function search(query) {
-    const val = await myDB.query({ query, store: promisesData });
-    const subCatVal = await myDB.query({ query, store: subCategoriesData });
-    return { val, subCatVal }
+  const val = await myDB.query({ query, store: promisesData })
+  const subCatVal = await myDB.query({ query, store: subCategoriesData })
+  return { val, subCatVal }
 }

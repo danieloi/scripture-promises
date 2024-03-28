@@ -51,7 +51,7 @@ export type IndexData = {
   categories: CategoryData[]
 }
 
-export type SearchResult = {
+export type SearchResultData = {
   val: any
   subCatVal: any
 }

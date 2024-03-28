@@ -322,796 +322,806 @@
     },
     {
       "id": 41,
-      "name": "Pardon through Christ Reconciliation",
+      "name": "Pardon through Christ",
       "categoryId": 2
     },
     {
       "id": 42,
-      "name": "Adoption",
+      "name": "Reconciliation",
       "categoryId": 2
     },
     {
       "id": 43,
-      "name": "Union and communion with the church",
+      "name": "Adoption",
       "categoryId": 2
     },
     {
       "id": 44,
-      "name": "Free access to God, with acceptance",
+      "name": "Union and communion with the church",
       "categoryId": 2
     },
     {
       "id": 45,
-      "name": "Of hearing prayer",
+      "name": "Free access to God, with acceptance",
       "categoryId": 2
     },
     {
       "id": 46,
-      "name": "Sanctifying grace in general",
+      "name": "Of hearing prayer",
       "categoryId": 2
     },
     {
       "id": 47,
-      "name": "Of converting grace",
+      "name": "Sanctifying grace in general",
       "categoryId": 2
     },
     {
       "id": 48,
-      "name": "The grace of repentance",
+      "name": "Of converting grace",
       "categoryId": 2
     },
     {
       "id": 49,
-      "name": "The grace of faith",
+      "name": "The grace of repentance",
       "categoryId": 2
     },
     {
       "id": 50,
-      "name": "Grace to fear God",
+      "name": "The grace of faith",
       "categoryId": 2
     },
     {
       "id": 51,
-      "name": "Knowledge",
+      "name": "Grace to fear God",
       "categoryId": 2
     },
     {
       "id": 52,
-      "name": "Wisdom",
+      "name": "Knowledge",
       "categoryId": 2
     },
     {
       "id": 53,
-      "name": "Divine teaching",
+      "name": "Wisdom",
       "categoryId": 2
     },
     {
       "id": 54,
-      "name": "Divine guidance",
+      "name": "Divine teaching",
       "categoryId": 2
     },
     {
       "id": 55,
-      "name": "Ability for good discourse",
+      "name": "Divine guidance",
       "categoryId": 2
     },
     {
       "id": 56,
-      "name": "The means of grace",
+      "name": "Ability for good discourse",
       "categoryId": 2
     },
     {
       "id": 57,
-      "name": "A blessing upon ordinances",
+      "name": "The means of grace",
       "categoryId": 2
     },
     {
       "id": 58,
-      "name": "To mortify sin",
+      "name": "A blessing upon ordinances",
       "categoryId": 2
     },
     {
       "id": 59,
-      "name": "Against temptation",
+      "name": "To mortify sin",
       "categoryId": 2
     },
     {
       "id": 60,
-      "name": "From the enticement of sinners",
+      "name": "Against temptation",
       "categoryId": 2
     },
     {
       "id": 61,
-      "name": "Victory over the world",
+      "name": "From the enticement of sinners",
       "categoryId": 2
     },
     {
       "id": 62,
-      "name": "Victory over the devil",
+      "name": "Victory over the world",
       "categoryId": 2
     },
     {
       "id": 63,
-      "name": "Strength, courage, and resolution",
+      "name": "Victory over the devil",
       "categoryId": 2
     },
     {
       "id": 64,
-      "name": "Fruitfulness",
+      "name": "Strength, courage, and resolution",
       "categoryId": 2
     },
     {
       "id": 65,
-      "name": "In old age",
+      "name": "Fruitfulness",
       "categoryId": 2
     },
     {
       "id": 66,
-      "name": "Increase of grace",
+      "name": "In old age",
       "categoryId": 2
     },
     {
       "id": 67,
-      "name": "The grace of meekness",
+      "name": "Increase of grace",
       "categoryId": 2
     },
     {
       "id": 68,
-      "name": "Grace to persevere",
+      "name": "The grace of meekness",
       "categoryId": 2
     },
     {
       "id": 69,
-      "name": "Sanctified afflictions",
+      "name": "Grace to persevere",
       "categoryId": 2
     },
     {
       "id": 70,
-      "name": "Grace to the children of Israel",
+      "name": "Sanctified afflictions",
       "categoryId": 2
     },
     {
       "id": 71,
-      "name": "God our God",
+      "name": "Grace to the children of Israel",
       "categoryId": 2
     },
     {
       "id": 72,
-      "name": "God Our portion",
+      "name": "God our God",
       "categoryId": 2
     },
     {
       "id": 73,
-      "name": "God Our glory",
+      "name": "God Our portion",
       "categoryId": 2
     },
     {
       "id": 74,
-      "name": "His presence with us",
+      "name": "God Our glory",
       "categoryId": 2
     },
     {
       "id": 75,
-      "name": "His love",
+      "name": "His presence with us",
       "categoryId": 2
     },
     {
       "id": 76,
-      "name": "His mercy",
-      "categoryId": 2
-    },
-    {
-      "id": 77,
-      "name": "His help",
-      "categoryId": 2
-    },
-    {
-      "id": 78,
-      "name": "His care",
-      "categoryId": 2
-    },
-    {
-      "id": 79,
-      "name": "His covenant with his people",
-      "categoryId": 2
-    },
-    {
-      "id": 80,
-      "name": "God will not forsake them",
-      "categoryId": 2
-    },
-    {
-      "id": 81,
-      "name": "An interest in Christ",
-      "categoryId": 2
-    },
-    {
-      "id": 82,
-      "name": "All grace from Christ",
-      "categoryId": 2
-    },
-    {
-      "id": 83,
-      "name": "Redemption by Christ",
-      "categoryId": 2
-    },
-    {
-      "id": 84,
-      "name": "Life from Him",
-      "categoryId": 2
-    },
-    {
-      "id": 85,
-      "name": "His intercession",
-      "categoryId": 2
-    },
-    {
-      "id": 86,
       "name": "His love",
       "categoryId": 2
     },
     {
+      "id": 77,
+      "name": "His mercy",
+      "categoryId": 2
+    },
+    {
+      "id": 78,
+      "name": "His help",
+      "categoryId": 2
+    },
+    {
+      "id": 79,
+      "name": "His care",
+      "categoryId": 2
+    },
+    {
+      "id": 80,
+      "name": "His covenant with his people",
+      "categoryId": 2
+    },
+    {
+      "id": 81,
+      "name": "God will not forsake them",
+      "categoryId": 2
+    },
+    {
+      "id": 82,
+      "name": "An interest in Christ",
+      "categoryId": 2
+    },
+    {
+      "id": 83,
+      "name": "All grace from Christ",
+      "categoryId": 2
+    },
+    {
+      "id": 84,
+      "name": "Redemption by Christ",
+      "categoryId": 2
+    },
+    {
+      "id": 85,
+      "name": "Life from Him",
+      "categoryId": 2
+    },
+    {
+      "id": 86,
+      "name": "His intercession",
+      "categoryId": 2
+    },
+    {
       "id": 87,
-      "name": "His care of his church",
+      "name": "His love",
       "categoryId": 2
     },
     {
       "id": 88,
-      "name": "His presence with his people",
+      "name": "His care of his church",
       "categoryId": 2
     },
     {
       "id": 89,
-      "name": "Promises of the Spirit",
+      "name": "His presence with his people",
       "categoryId": 2
     },
     {
       "id": 90,
-      "name": "His teaching",
+      "name": "Promises of the Spirit",
       "categoryId": 2
     },
     {
       "id": 91,
-      "name": "Help in prayer",
+      "name": "His teaching",
       "categoryId": 2
     },
     {
       "id": 92,
-      "name": "To witness our adoption",
+      "name": "Help in prayer",
       "categoryId": 2
     },
     {
       "id": 93,
-      "name": "To seal our redemption",
+      "name": "To witness our adoption",
       "categoryId": 2
     },
     {
       "id": 94,
-      "name": "To be our comforter",
+      "name": "To seal our redemption",
       "categoryId": 2
     },
     {
       "id": 95,
-      "name": "The joys of the Holy Ghost",
+      "name": "To be our comforter",
       "categoryId": 2
     },
     {
       "id": 96,
-      "name": "The ministry of angels",
+      "name": "The joys of the Holy Ghost",
       "categoryId": 2
     },
     {
       "id": 97,
-      "name": "That we shall be kings and priests unto God",
+      "name": "The ministry of angels",
       "categoryId": 2
     },
     {
       "id": 98,
-      "name": "Peace of conscience",
+      "name": "That we shall be kings and priests unto God",
       "categoryId": 2
     },
     {
       "id": 99,
-      "name": "Comfort",
+      "name": "Peace of conscience",
       "categoryId": 2
     },
     {
       "id": 100,
-      "name": "Hope",
+      "name": "Comfort",
       "categoryId": 2
     },
     {
       "id": 101,
-      "name": "Delight and joy in God",
+      "name": "Hope",
       "categoryId": 2
     },
     {
       "id": 102,
-      "name": "Support in death",
+      "name": "Delight and joy in God",
       "categoryId": 2
     },
     {
       "id": 103,
+      "name": "Support in death",
+      "categoryId": 2
+    },
+    {
+      "id": 104,
       "name": "Deliverance from hell",
       "categoryId": 3
     },
     {
-      "id": 104,
+      "id": 105,
       "name": "Happiness immediately after death",
       "categoryId": 3
     },
     {
-      "id": 105,
+      "id": 106,
       "name": "A glorious resurrection",
       "categoryId": 3
     },
     {
-      "id": 106,
+      "id": 107,
       "name": "Everlasting happiness in heaven",
       "categoryId": 3
     },
     {
-      "id": 107,
+      "id": 108,
       "name": "Freedom from all sorrow in heaven",
       "categoryId": 3
     },
     {
-      "id": 108,
+      "id": 109,
       "name": "Joy in heaven",
       "categoryId": 3
     },
     {
-      "id": 109,
+      "id": 110,
       "name": "Glory in heaven",
       "categoryId": 3
     },
     {
-      "id": 110,
+      "id": 111,
       "name": "The kingdom of heaven",
       "categoryId": 3
     },
     {
-      "id": 111,
+      "id": 112,
       "name": "The heavenly inheritance",
       "categoryId": 3
     },
     {
-      "id": 112,
+      "id": 113,
       "name": "Enjoyment of God",
       "categoryId": 3
     },
     {
-      "id": 113,
+      "id": 114,
       "name": "Eternal life",
       "categoryId": 3
     },
     {
-      "id": 114,
+      "id": 115,
       "name": "To faith in Christ",
       "categoryId": 4
     },
     {
-      "id": 115,
+      "id": 116,
       "name": "Confessing Christ",
       "categoryId": 4
     },
     {
-      "id": 116,
+      "id": 117,
       "name": "To repentance",
       "categoryId": 4
     },
     {
-      "id": 117,
+      "id": 118,
       "name": "To them that mourn for the wickedness of the land",
       "categoryId": 4
     },
     {
-      "id": 118,
+      "id": 119,
       "name": "Repenting in affliction",
       "categoryId": 4
     },
     {
-      "id": 119,
+      "id": 120,
       "name": "Confession of sin",
       "categoryId": 4
     },
     {
-      "id": 120,
+      "id": 121,
       "name": "Obedience",
       "categoryId": 4
     },
     {
-      "id": 121,
+      "id": 122,
       "name": "Obeying Christ",
       "categoryId": 4
     },
     {
-      "id": 122,
+      "id": 123,
       "name": "To sincerity and uprightness",
       "categoryId": 4
     },
     {
-      "id": 123,
+      "id": 124,
       "name": "To the love of God",
       "categoryId": 4
     },
     {
-      "id": 124,
+      "id": 125,
       "name": "To the love of Christ",
       "categoryId": 4
     },
     {
-      "id": 125,
+      "id": 126,
       "name": "To trusting and patiently waiting on God",
       "categoryId": 4
     },
     {
-      "id": 126,
+      "id": 127,
       "name": "To the fear of God",
       "categoryId": 4
     },
     {
-      "id": 127,
+      "id": 128,
       "name": "Honoring God",
       "categoryId": 4
     },
     {
-      "id": 128,
+      "id": 129,
       "name": "To prayer",
       "categoryId": 4
     },
     {
-      "id": 129,
+      "id": 130,
       "name": "Seeking God",
       "categoryId": 4
     },
     {
-      "id": 130,
+      "id": 131,
       "name": "Secret prayer",
       "categoryId": 4
     },
     {
-      "id": 131,
+      "id": 132,
       "name": "Praising God",
       "categoryId": 4
     },
     {
-      "id": 132,
+      "id": 133,
       "name": "Desires of grace",
       "categoryId": 4
     },
     {
-      "id": 133,
+      "id": 134,
       "name": "To the wise",
       "categoryId": 4
     },
     {
-      "id": 134,
+      "id": 135,
       "name": "Love and study of wisdom",
       "categoryId": 4
     },
     {
-      "id": 135,
+      "id": 136,
       "name": "Knowledge of God and Christ",
       "categoryId": 4
     },
     {
-      "id": 136,
+      "id": 137,
       "name": "Learning of Christ",
       "categoryId": 4
     },
     {
-      "id": 137,
+      "id": 138,
       "name": "To a due regard to the Word of God: To hearing and reading the Word",
       "categoryId": 4
     },
     {
-      "id": 138,
+      "id": 139,
       "name": "To a due regard to the Word of God: Loving the Word",
       "categoryId": 4
     },
     {
-      "id": 139,
+      "id": 140,
       "name": "To a due regard to the Word of God: Trembling at the Word",
       "categoryId": 4
     },
     {
-      "id": 140,
+      "id": 141,
       "name": "Meditation",
       "categoryId": 4
     },
     {
-      "id": 141,
+      "id": 142,
       "name": "To fasting",
       "categoryId": 4
     },
     {
-      "id": 142,
+      "id": 143,
       "name": "Fasting in secret",
       "categoryId": 4
     },
     {
-      "id": 143,
+      "id": 144,
       "name": "To baptism",
       "categoryId": 4
     },
     {
-      "id": 144,
+      "id": 145,
       "name": "To the Lord's Supper",
       "categoryId": 4
     },
     {
-      "id": 145,
+      "id": 146,
       "name": "To good discourse",
       "categoryId": 4
     },
     {
-      "id": 146,
+      "id": 147,
       "name": "The government of the tongue",
       "categoryId": 4
     },
     {
-      "id": 147,
+      "id": 148,
       "name": "To watchfulness",
       "categoryId": 4
     },
     {
-      "id": 148,
+      "id": 149,
       "name": "To keeping good company",
       "categoryId": 4
     },
     {
-      "id": 149,
+      "id": 150,
       "name": "Avoiding evil company",
       "categoryId": 4
     },
     {
-      "id": 150,
+      "id": 151,
       "name": "To performing oaths",
       "categoryId": 4
     },
     {
-      "id": 151,
+      "id": 152,
       "name": "To the keeping of the Sabbath",
       "categoryId": 4
     },
     {
-      "id": 152,
+      "id": 153,
       "name": "To obedience to parents",
       "categoryId": 5
     },
     {
-      "id": 153,
+      "id": 154,
       "name": "To good education",
       "categoryId": 5
     },
     {
-      "id": 154,
+      "id": 155,
       "name": "Correction of children",
       "categoryId": 5
     },
     {
-      "id": 155,
+      "id": 156,
       "name": "To a good wife",
       "categoryId": 5
     },
     {
-      "id": 156,
+      "id": 157,
       "name": "To faithful servants",
       "categoryId": 5
     },
     {
-      "id": 157,
+      "id": 158,
       "name": "To good kings and magistrates",
       "categoryId": 5
     },
     {
-      "id": 158,
+      "id": 159,
       "name": "To obedient subjects",
       "categoryId": 5
     },
     {
-      "id": 159,
+      "id": 160,
       "name": "To faithful ministers",
       "categoryId": 5
     },
     {
-      "id": 160,
+      "id": 161,
       "name": "To them that receive and hearken to ministers",
       "categoryId": 5
     },
     {
-      "id": 161,
+      "id": 162,
       "name": "To love and unity",
       "categoryId": 5
     },
     {
-      "id": 162,
+      "id": 163,
       "name": "To the peacemakers",
       "categoryId": 5
     },
     {
-      "id": 163,
+      "id": 164,
       "name": "Love to God's people",
       "categoryId": 5
     },
     {
-      "id": 164,
-      "name": "To the charitable, the merciful and the liberal to God's ministers To alms in secret",
-      "categoryId": 5
-    },
-    {
       "id": 165,
-      "name": "To the supporting of God's ministers and worship",
+      "name": "To the charitable, the merciful and the liberal to God's ministers",
       "categoryId": 5
     },
     {
       "id": 166,
-      "name": "To the merciful",
+      "name": "To alms in secret",
       "categoryId": 5
     },
     {
       "id": 167,
-      "name": "To the giving and the receiving of reproofs",
+      "name": "To the supporting of God's ministers and worship",
       "categoryId": 5
     },
     {
       "id": 168,
-      "name": "To forgiving injuries",
+      "name": "To the merciful",
       "categoryId": 5
     },
     {
       "id": 169,
-      "name": "To chastity and purity",
+      "name": "To the giving and the receiving of reproofs",
       "categoryId": 5
     },
     {
       "id": 170,
-      "name": "To diligence",
+      "name": "To forgiving injuries",
       "categoryId": 5
     },
     {
       "id": 171,
-      "name": "To improving our talents",
+      "name": "To chastity and purity",
       "categoryId": 5
     },
     {
       "id": 172,
-      "name": "Moderation in sleep",
+      "name": "To diligence",
       "categoryId": 5
     },
     {
       "id": 173,
-      "name": "To the just and honest",
+      "name": "To improving our talents",
       "categoryId": 5
     },
     {
       "id": 174,
-      "name": "To truth",
+      "name": "Moderation in sleep",
       "categoryId": 5
     },
     {
       "id": 175,
-      "name": "To candor",
+      "name": "To the just and honest",
       "categoryId": 5
     },
     {
       "id": 176,
-      "name": "Contentment",
+      "name": "To truth",
       "categoryId": 5
     },
     {
       "id": 177,
-      "name": "Mortification of sin",
+      "name": "To candor",
       "categoryId": 5
     },
     {
       "id": 178,
-      "name": "To the spiritually-minded",
+      "name": "Contentment",
       "categoryId": 5
     },
     {
       "id": 179,
+      "name": "Mortification of sin",
+      "categoryId": 5
+    },
+    {
+      "id": 180,
+      "name": "To the spiritually-minded",
+      "categoryId": 5
+    },
+    {
+      "id": 181,
       "name": "The meek",
       "categoryId": 6
     },
     {
-      "id": 180,
+      "id": 182,
       "name": "To the humble",
       "categoryId": 6
     },
     {
-      "id": 181,
+      "id": 183,
       "name": "The contrite and mourners",
       "categoryId": 6
     },
     {
-      "id": 182,
+      "id": 184,
       "name": "To them that suffer for righteousness' sake",
       "categoryId": 6
     },
     {
-      "id": 183,
+      "id": 185,
       "name": "To them that are excommunicated unjustly",
       "categoryId": 6
     },
     {
-      "id": 184,
+      "id": 186,
       "name": "To patience and submission",
       "categoryId": 6
     },
     {
-      "id": 185,
+      "id": 187,
       "name": "To perseverance",
       "categoryId": 6
     },
     {
-      "id": 186,
+      "id": 188,
       "name": "To him that overcomes",
       "categoryId": 6
     },
     {
-      "id": 187,
+      "id": 189,
       "name": "The enlargement of the church, and the spread of the Gospel and Kingdom of Christ",
       "categoryId": 7
     },
     {
-      "id": 188,
+      "id": 190,
       "name": "Glory of the church",
       "categoryId": 7
     },
     {
-      "id": 189,
+      "id": 191,
       "name": "Increase of light and knowledge, and the means of grace",
       "categoryId": 7
     },
     {
-      "id": 190,
+      "id": 192,
       "name": "Increase of purity, holiness, and righteousness",
       "categoryId": 7
     },
     {
-      "id": 191,
+      "id": 193,
       "name": "Peace, love, and unity",
       "categoryId": 7
     },
     {
-      "id": 192,
+      "id": 194,
       "name": "Submission and destruction of the enemies of the church",
       "categoryId": 7
     },
     {
-      "id": 193,
+      "id": 195,
       "name": "The destruction of Antichrist, Babylon, etc.",
       "categoryId": 7
     },
     {
-      "id": 194,
+      "id": 196,
       "name": "Favor and submission of kings to the Kingdom of Christ",
       "categoryId": 7
     },
     {
-      "id": 195,
+      "id": 197,
       "name": "The security, tranquility, and prosperity of the church",
       "categoryId": 7
     },
     {
-      "id": 196,
+      "id": 198,
       "name": "The perpetual continuance of the church",
       "categoryId": 7
     },
     {
-      "id": 197,
+      "id": 199,
       "name": "The conversion and restoration of the Jews",
       "categoryId": 7
     },
     {
-      "id": 198,
+      "id": 200,
       "name": "That Christ will come again",
       "categoryId": 8
     },
     {
-      "id": 199,
+      "id": 201,
       "name": "That God will perform all his promises",
       "categoryId": 9
     }
@@ -5851,7 +5861,12 @@
       "reference": "Luke 7:50",
       "subCategoryId": 99
     },
-    { "id": 789, "quote": "", "reference": "Psalm 85:8", "subCategoryId": 99 },
+    {
+      "id": 789,
+      "quote": "He will speak peace unto his people, and to his saints",
+      "reference": "Psalm 85:8",
+      "subCategoryId": 99
+    },
     {
       "id": 790,
       "quote": "He healeth the broken in heart, and bindeth up their wounds",

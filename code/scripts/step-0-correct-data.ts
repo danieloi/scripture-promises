@@ -19,14 +19,18 @@ data.subCategories = subCategories
 // })
 
 // run prior commented out code first before this
-const updatedPromises = data.promises.map((promise) => {
-  if (promise.id >= 1632) {
-    return { ...promise, subCategoryId: promise.subCategoryId + 1 }
-  }
-  return promise
+// const updatedPromises = data.promises.map((promise) => {
+//   if (promise.id >= 1632) {
+//     return { ...promise, subCategoryId: promise.subCategoryId + 1 }
+//   }
+//   return promise
+// })
+
+const promises = data.promises.map((promise, index) => {
+  return { ...promise, id: index }
 })
 
-data.promises = updatedPromises
+data.promises = promises
 
 const newData = JSON.stringify(data, null, 3)
 fs.writeFileSync('apps/data.json', newData, 'utf-8')

@@ -10,6 +10,15 @@ const subCategories = data.subCategories.map((subCategory, index) => {
 
 data.subCategories = subCategories
 
+const updatedPromises = data.promises.map((promise) => {
+  if (promise.id >= 1550) {
+    return { ...promise, subCategoryId: promise.subCategoryId + 1 }
+  }
+  return promise
+})
+
+data.promises = updatedPromises
+
 const newData = JSON.stringify(data, null, 3)
 fs.writeFileSync('apps/data.json', newData, 'utf-8')
 

@@ -34,7 +34,7 @@
       ],
       "@showtime-xyz/universal.safe-area": ["./design-system/safe-area"],
       "@showtime-xyz/universal.select": ["./design-system/select"],
-
+      "@showtime-xyz/universal.spinner": ["./design-system/spinner"],
       "@showtime-xyz/universal.accordion": ["./design-system/accordion"],
       "@showtime-xyz/universal.color-scheme": ["./design-system/color-scheme"],
       "@showtime-xyz/universal.utils": ["./design-system/utils"]

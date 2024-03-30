@@ -11,7 +11,7 @@ import {
   ModalHeaderBar,
 } from '@showtime-xyz/universal.modal'
 
-export type ModalSheetProps = Pick<ModalProps, 'web_height'> & {
+export type ModalSheetProps = ModalProps & {
   alwaysLarge?: boolean
   children: React.ReactElement
   title?: string

@@ -8,12 +8,12 @@ import { Accordion } from '@showtime-xyz/universal.accordion'
 import { Button } from '@showtime-xyz/universal.button'
 import { Input } from '@showtime-xyz/universal.input'
 import { IndexData, SearchResultData } from '../../../types'
-import { useCallback, useContext, useState } from 'react'
+import { useCallback, useContext, useState, useEffect } from 'react'
 import { Search } from '@showtime-xyz/universal.icon'
 import { Text } from '@showtime-xyz/universal.text'
 import { View } from '@showtime-xyz/universal.view'
 import { ModalSheet } from '@showtime-xyz/universal.modal-sheet'
-import { TextInput } from '@showtime-xyz/universal.text-input'
+import { Spinner } from '@showtime-xyz/universal.spinner'
 import { useIsDarkMode } from '@showtime-xyz/universal.hooks'
 
 interface IndexProps {
@@ -42,23 +42,46 @@ const Index = ({ data }: IndexProps) => {
     [setSelectedCategory]
   )
 
+  const [isLoading, setIsLoading] = useState(false)
+
   const [isSearchModalVisible, setIsSearchModalVisible] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<SearchResultData>(null)
 
   const handleSearch = async () => {
-    const response = await fetch('/api/search', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ query: searchQuery }),
-    })
-    const data = await response.json()
-    setSearchResults(data)
+    setIsLoading(true)
+    try {
+      const response = await fetch('/api/search', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query: searchQuery }),
+      })
+      const data = await response.json()
+      setSearchResults(data)
+    } catch (error) {
+      console.error('Error fetching search results:', error)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const isDark = useIsDarkMode()
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsSearchModalVisible(false)
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
   return (
     <>
@@ -152,6 +175,7 @@ const Index = ({ data }: IndexProps) => {
       <ModalSheet
         alwaysLarge
         title=""
+        headerShown={false}
         visible={isSearchModalVisible}
         close={() => {
           setIsSearchModalVisible(false)
@@ -162,20 +186,45 @@ const Index = ({ data }: IndexProps) => {
         }}
         tw="sm:w-[640px]"
       >
-        <View tw="px-4 min-h-[400px] ">
-          <Input
-            value={searchQuery}
-            onChangeText={setSearchQuery}
-            type="search"
-            autoFocus
-            placeholder="Search..."
-            onKeyPress={(e) => {
-              if (e.nativeEvent.key === 'Enter') {
-                handleSearch()
-              }
-            }}
-            enterKeyHint="search"
-          />
+        <View tw="px-4 min-h-[400px] pt-8">
+          <View tw="mb-4 flex flex-row justify-between items-center ">
+            <View tw="flex-grow">
+              <Input
+                leftElement={
+                  <View tw="ml-3 mr-2">
+                    {isLoading ? (
+                      <Spinner size="small" />
+                    ) : (
+                      <Search
+                        color={isDark ? '#FFF' : '#18181B'}
+                        fontSize={24}
+                      />
+                    )}
+                  </View>
+                }
+                value={searchQuery}
+                onChangeText={setSearchQuery}
+                type="search"
+                autoFocus
+                placeholder="Search..."
+                onKeyPress={(e) => {
+                  if (e.nativeEvent.key === 'Enter') {
+                    handleSearch()
+                  }
+                }}
+                returnKeyType="search"
+                enterKeyHint="search"
+              />
+            </View>
+            <Button
+              variant="base"
+              onPress={() => setIsSearchModalVisible(false)}
+            >
+              <Text tw="text-base font-normal text-gray-900 dark:text-white">
+                Cancel
+              </Text>
+            </Button>
+          </View>
           <View tw="h-[20px]" />
 
           {searchResults &&

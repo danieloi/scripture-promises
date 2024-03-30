@@ -13,6 +13,7 @@ import { Text } from '@showtime-xyz/universal.text'
 import { View } from '@showtime-xyz/universal.view'
 import { ModalSheet } from '@showtime-xyz/universal.modal-sheet'
 import { TextInput } from '@showtime-xyz/universal.text-input'
+import { useIsDarkMode } from '@showtime-xyz/universal.hooks'
 
 interface IndexProps {
   data: IndexData[]
@@ -56,12 +57,20 @@ const Index = ({ data }: IndexProps) => {
     setSearchResults(data)
   }
 
+  const isDark = useIsDarkMode()
+
   return (
     <>
       <PageContainer>
-        <Button tw="mb-6 " onPress={() => setIsSearchModalVisible(true)}>
-          <Search />
-          <Text tw="ml-2 font-semibold">Search</Text>
+        <Button
+          variant="base"
+          tw="mb-6 py-5 bg-warmGray-200 dark:bg-gray-800"
+          onPress={() => setIsSearchModalVisible(true)}
+        >
+          <Search color={isDark ? '#FFF' : '#18181B'} />
+          <Text tw="ml-2 font-semibold text-gray-900 dark:text-white">
+            Search
+          </Text>
         </Button>
 
         <Accordion.Root

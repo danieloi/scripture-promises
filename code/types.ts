@@ -26,8 +26,21 @@ export type SubCategory = {
   categoryId: number
 }
 
+export type SearchSubCategoryResult = {
+  id: `subCategories-${number}`
+  name: string
+  categoryId: number
+}
+
 export type Promise = {
   id: number
+  quote: string
+  reference: string
+  subCategoryId: number
+}
+
+export type SearchPromiseResult = {
+  id: `promises-${number}`
   quote: string
   reference: string
   subCategoryId: number
@@ -52,8 +65,8 @@ export type IndexData = {
 }
 
 export type SearchResultData = {
-  val: Promise[]
-  subCatVal: SubCategory[]
+  val: SearchPromiseResult[]
+  subCatVal: SearchSubCategoryResult[]
 }
 
 export type SubcategoryDetailData = {

@@ -6,6 +6,7 @@ import { TreeViewContext } from 'app/components/tree-view-context'
 import { PageContainer } from 'app/components/page-container'
 import { Accordion } from '@showtime-xyz/universal.accordion'
 import { Button } from '@showtime-xyz/universal.button'
+import { Input } from '@showtime-xyz/universal.input'
 import { IndexData, SearchResultData } from '../../../types'
 import { useCallback, useContext, useState } from 'react'
 import { Search } from '@showtime-xyz/universal.icon'
@@ -152,16 +153,31 @@ const Index = ({ data }: IndexProps) => {
         alwaysLarge
         title=""
         visible={isSearchModalVisible}
-        close={() => setIsSearchModalVisible(false)}
+        close={() => {
+          setIsSearchModalVisible(false)
+          setTimeout(() => {
+            setSearchQuery('')
+            setSearchResults(null)
+          }, 300)
+        }}
+        tw="sm:w-[640px]"
       >
-        <View>
-          <TextInput
+        <View tw="px-4 min-h-[400px] ">
+          <Input
             value={searchQuery}
             onChangeText={setSearchQuery}
+            type="search"
+            autoFocus
             placeholder="Search..."
-            tw="text-black dark:text-white"
+            onKeyPress={(e) => {
+              if (e.nativeEvent.key === 'Enter') {
+                handleSearch()
+              }
+            }}
+            enterKeyHint="search"
           />
-          <Button onPress={handleSearch}>Search</Button>
+          <View tw="h-[20px]" />
+
           {searchResults &&
             searchResults.subCatVal.map((subCategory) => (
               <View
@@ -169,8 +185,8 @@ const Index = ({ data }: IndexProps) => {
                 tw="p-4 mb-4 bg-white dark:bg-gray-800 shadow rounded-lg"
               >
                 <TextLink
-                  href={`/subcategories/${subCategory.id}`}
-                  tw="font-semibold text-gray-900 dark:text-white"
+                  href={`/subcategories/${subCategory.id.split('-')[1]}`}
+                  tw="font-semibold text-gray-9000 dark:text-white"
                 >
                   {subCategory.name}
                 </TextLink>

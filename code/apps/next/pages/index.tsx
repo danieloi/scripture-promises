@@ -21,6 +21,7 @@ interface IndexProps {
   data: IndexData[]
 }
 
+// TODO: refactor to separate components
 const Index = ({ data }: IndexProps) => {
   const {
     selectedCategory,
@@ -257,18 +258,20 @@ const Index = ({ data }: IndexProps) => {
                 ))}
               {searchResults.val &&
                 searchResults.val.map((verse) => (
-                  <View
+                  <TextLink
                     key={`result-v.${verse.id}`} // Assuming verses have an 'id' property
-                    tw="p-4 mb-4 bg-white dark:bg-gray-800 shadow rounded-lg"
+                    href={`/subcategories/${verse.subCategoryId}`}
                   >
-                    {/* Render verse content. Adjust according to your actual verse data structure */}
-                    <Text tw="mb-3 font-semibold text-gray-900 dark:text-white">
-                      {verse.quote}
-                    </Text>
-                    <Text tw="text-gray-900 dark:text-white">
-                      {verse.reference}
-                    </Text>
-                  </View>
+                    <View tw="p-4 mb-4 bg-white dark:bg-gray-800 shadow rounded-lg">
+                      {/* Render verse content. Adjust according to your actual verse data structure */}
+                      <Text tw="mb-3 font-semibold text-gray-900 dark:text-white">
+                        {verse.quote}
+                      </Text>
+                      <Text tw="text-gray-900 dark:text-white">
+                        {verse.reference}
+                      </Text>
+                    </View>
+                  </TextLink>
                 ))}
             </>
           )}

@@ -43,7 +43,9 @@ export class SmolVector {
         similarity: this.similarityFn(queryVector, item.embedding),
       }
     })
-    return results.sort((a, b) => b.similarity - a.similarity)
+    return results
+      .sort((a, b) => b.similarity - a.similarity)
+      .map(({ embedding, ...rest }) => rest)
   }
 }
 

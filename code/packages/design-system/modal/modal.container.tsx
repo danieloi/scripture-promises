@@ -6,22 +6,22 @@ import {
   useImperativeHandle,
   useMemo,
   useRef,
-} from "react";
+} from 'react'
 
 import BottomSheet, {
   BottomSheetBackdrop,
   BottomSheetModal,
   BottomSheetHandleProps,
   BottomSheetBackdropProps,
-} from "@gorhom/bottom-sheet";
+} from '@gorhom/bottom-sheet'
 
-import { useIsDarkMode } from "@showtime-xyz/universal.hooks";
-import { useSafeAreaInsets } from "@showtime-xyz/universal.safe-area";
-import { colors } from "@showtime-xyz/universal.tailwind";
+import { useIsDarkMode } from '@showtime-xyz/universal.hooks'
+import { useSafeAreaInsets } from '@showtime-xyz/universal.safe-area'
+import { colors } from '@showtime-xyz/universal.tailwind'
 
-import { ModalHeader } from "./modal.header";
-import { ModalHeaderBar } from "./modal.header-bar";
-import type { ModalContainerProps, ModalMethods } from "./types";
+import { ModalHeader } from './modal.header'
+import { ModalHeaderBar } from './modal.header-bar'
+import type { ModalContainerProps, ModalMethods } from './types'
 
 // @ts-ignore
 
@@ -42,36 +42,36 @@ const ModalContainerComponent = forwardRef<ModalMethods, ModalContainerProps>(
     },
     ref
   ) {
-    const isDark = useIsDarkMode();
-    const bottomSheetRef = useRef<BottomSheet>(null);
-    const { top } = useSafeAreaInsets();
+    const isDark = useIsDarkMode()
+    const bottomSheetRef = useRef<BottomSheet>(null)
+    const { top } = useSafeAreaInsets()
 
     const backgroundStyle = useMemo(
       () => ({
-        backgroundColor: isDark ? "#000" : "#FFF",
+        backgroundColor: isDark ? '#000' : '#FFF',
         borderTopLeftRadius: 32,
         borderTopRightRadius: 32,
-        pointerEvents: "auto",
+        pointerEvents: 'auto',
       }),
       [isDark]
-    );
+    )
     const ModalSheet = useMemo(
       () => (isScreen ? BottomSheet : BottomSheetModal),
       [isScreen]
-    );
+    )
 
     //#region effects
     useEffect(() => {
       if (!isScreen) {
         // @ts-ignore
-        bottomSheetRef.current?.present();
+        bottomSheetRef.current?.present()
       }
-    }, [isScreen]);
+    }, [isScreen])
     useImperativeHandle(ref, () => ({
       close: () => bottomSheetRef.current?.close(),
       snapToIndex: (index: number) =>
         bottomSheetRef.current?.snapToIndex(index),
-    }));
+    }))
     //#endregion
 
     //#region render
@@ -87,7 +87,7 @@ const ModalContainerComponent = forwardRef<ModalMethods, ModalContainerProps>(
         />
       ),
       [isDark]
-    );
+    )
 
     const renderHandleComponent = useCallback(
       (props: BottomSheetHandleProps) => {
@@ -102,7 +102,7 @@ const ModalContainerComponent = forwardRef<ModalMethods, ModalContainerProps>(
               {...props}
             />
           </>
-        ) : null;
+        ) : null
       },
       [
         title,
@@ -112,7 +112,7 @@ const ModalContainerComponent = forwardRef<ModalMethods, ModalContainerProps>(
         closeButtonProps,
         subtitle,
       ]
-    );
+    )
 
     return (
       <ModalSheet
@@ -120,6 +120,7 @@ const ModalContainerComponent = forwardRef<ModalMethods, ModalContainerProps>(
         index={0}
         topInset={top}
         snapPoints={mobile_snapPoints!}
+        // @ts-ignore
         backgroundStyle={backgroundStyle}
         enablePanDownToClose={true}
         handleComponent={renderHandleComponent}
@@ -131,8 +132,8 @@ const ModalContainerComponent = forwardRef<ModalMethods, ModalContainerProps>(
       >
         {children}
       </ModalSheet>
-    );
+    )
   }
-);
+)
 
-export const ModalContainer = memo(ModalContainerComponent);
+export const ModalContainer = memo(ModalContainerComponent)

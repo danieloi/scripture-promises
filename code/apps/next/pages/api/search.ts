@@ -74,7 +74,7 @@ async function search(query, type) {
       query,
       store: subCategoriesData,
     })
-    results = { subCatVal: subCatVal.slice(0, 5) }
+    results = { subCatVal: subCatVal.slice(0, 10) }
   } else {
     // Handle unexpected type or default case
     results = {} // Or implement a default behavior

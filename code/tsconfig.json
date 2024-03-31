@@ -32,6 +32,7 @@
       "@showtime-xyz/universal.pressable-scale": [
         "./design-system/pressable-scale"
       ],
+      "@showtime-xyz/universal.radio": ["./design-system/radio"],
       "@showtime-xyz/universal.safe-area": ["./design-system/safe-area"],
       "@showtime-xyz/universal.select": ["./design-system/select"],
       "@showtime-xyz/universal.spinner": ["./design-system/spinner"],

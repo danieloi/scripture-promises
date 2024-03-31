@@ -14,8 +14,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<SearchResultData>
 ) {
-  const { query } = req.body
-  const result = await search(query)
+  const { query, type } = req.body
+  const result = await search(query, type)
 
   // console.dir(data, { depth: null })
   return res.status(200).json(result)
@@ -59,14 +59,23 @@ const embeddingFn = async (str: string) => {
 
 const myDB = new SmolVector(embeddingFn)
 
-async function search(query) {
-  const val: SearchPromiseResult[] = await myDB.query({
-    query,
-    store: promisesData,
-  })
-  const subCatVal: SearchSubCategoryResult[] = await myDB.query({
-    query,
-    store: subCategoriesData,
-  })
-  return { val: val.slice(0, 10), subCatVal: subCatVal.slice(0, 10) }
+async function search(query, type) {
+  let results
+  if (type === 'verses') {
+    const val: SearchPromiseResult[] = await myDB.query({
+      query,
+      store: promisesData,
+    })
+    results = { val: val.slice(0, 15) }
+  } else if (type === 'subcategories') {
+    const subCatVal: SearchSubCategoryResult[] = await myDB.query({
+      query,
+      store: subCategoriesData,
+    })
+    results = { subCatVal: subCatVal.slice(0, 5) }
+  } else {
+    // Handle unexpected type or default case
+    results = {} // Or implement a default behavior
+  }
+  return results
 }

@@ -14,6 +14,7 @@ import { Text } from '@showtime-xyz/universal.text'
 import { View } from '@showtime-xyz/universal.view'
 import { ModalSheet } from '@showtime-xyz/universal.modal-sheet'
 import { Spinner } from '@showtime-xyz/universal.spinner'
+import { RadioGroup } from '@showtime-xyz/universal.radio'
 import { useIsDarkMode } from '@showtime-xyz/universal.hooks'
 
 interface IndexProps {
@@ -47,6 +48,7 @@ const Index = ({ data }: IndexProps) => {
   const [isSearchModalVisible, setIsSearchModalVisible] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<SearchResultData>(null)
+  const [radioSelection, setRadioSelection] = useState('verses')
 
   const handleSearch = async () => {
     setIsLoading(true)
@@ -56,7 +58,7 @@ const Index = ({ data }: IndexProps) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ query: searchQuery }),
+        body: JSON.stringify({ query: searchQuery, type: radioSelection }),
       })
       const data = await response.json()
       setSearchResults(data)
@@ -225,22 +227,51 @@ const Index = ({ data }: IndexProps) => {
               </Text>
             </Button>
           </View>
+          <View tw="pl-4">
+            <RadioGroup
+              initialValue="verses"
+              options={[
+                { label: 'Verses', value: 'verses' },
+                { label: 'Subcategories', value: 'subcategories' },
+              ]}
+              onSelect={setRadioSelection}
+            />
+          </View>
           <View tw="h-[20px]" />
 
-          {searchResults &&
-            searchResults.subCatVal.map((subCategory) => (
-              <View
-                key={`result-sc.${subCategory.id}`}
-                tw="p-4 mb-4 bg-white dark:bg-gray-800 shadow rounded-lg"
-              >
-                <TextLink
-                  href={`/subcategories/${subCategory.id.split('-')[1]}`}
-                  tw="font-semibold text-gray-9000 dark:text-white"
-                >
-                  {subCategory.name}
-                </TextLink>
-              </View>
-            ))}
+          {searchResults && (
+            <>
+              {searchResults.subCatVal &&
+                searchResults.subCatVal.map((subCategory) => (
+                  <View
+                    key={`result-sc.${subCategory.id}`}
+                    tw="p-4 mb-4 bg-white dark:bg-gray-800 shadow rounded-lg"
+                  >
+                    <TextLink
+                      href={`/subcategories/${subCategory.id.split('-')[1]}`}
+                      tw="font-semibold text-gray-900 dark:text-white"
+                    >
+                      {subCategory.name}
+                    </TextLink>
+                  </View>
+                ))}
+              {searchResults.val &&
+                searchResults.val.map((verse) => (
+                  <View
+                    key={`result-v.${verse.id}`} // Assuming verses have an 'id' property
+                    tw="p-4 mb-4 bg-white dark:bg-gray-800 shadow rounded-lg"
+                  >
+                    {/* Render verse content. Adjust according to your actual verse data structure */}
+                    <Text tw="mb-3 font-semibold text-gray-900 dark:text-white">
+                      {verse.quote}
+                    </Text>
+                    <Text tw="text-gray-900 dark:text-white">
+                      {verse.reference}
+                    </Text>
+                  </View>
+                ))}
+            </>
+          )}
         </View>
       </ModalSheet>
     </>

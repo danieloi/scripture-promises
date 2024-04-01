@@ -25,6 +25,10 @@ const nextConfig = {
     'react-native-gesture-handler',
     'expo-linear-gradient',
   ],
+  // Indicate that these packages should not be bundled by webpack
+  experimental: {
+    serverComponentsExternalPackages: ['sharp', 'onnxruntime-node'],
+  },
 }
 
 module.exports = withExpo(nextConfig)

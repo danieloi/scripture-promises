@@ -83,3 +83,6 @@ build/**
 
 /scripts/scripture-scripts-env
 /scripts/.env
+
+# turn off lambda layers
+/apps/next/sst/layers

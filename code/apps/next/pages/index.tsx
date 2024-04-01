@@ -54,7 +54,7 @@ const Index = ({ data }: IndexProps) => {
   const handleSearch = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch('/api/search', {
+      const response = await fetch('https://api.promises.skry.be/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

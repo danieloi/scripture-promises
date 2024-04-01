@@ -49,13 +49,13 @@ export default {
         }
       )
 
-      const transformersLayer = new lambda.LayerVersion(
-        stack,
-        'TransformersLayer',
-        {
-          code: lambda.Code.fromAsset('sst/layers/@xenova/transformers'),
-        }
-      )
+      // const transformersLayer = new lambda.LayerVersion(
+      //   stack,
+      //   'TransformersLayer',
+      //   {
+      //     code: lambda.Code.fromAsset('sst/layers/transformers'),
+      //   }
+      // )
 
       // Create a HTTP API
       const api = new Api(stack, 'Api', {
@@ -69,17 +69,19 @@ export default {
               handler: 'sst/functions/search.handler',
               // Use 18.x here because in 14, 16 layers have some issue with using NODE_PATH
               runtime: 'nodejs18.x',
+              architecture: 'arm_64',
               // Load dependencies in layers
-              layers: [sharpLayer, onnxruntimeNodeLayer, transformersLayer],
+              // layers: [sharpLayer],
+              layers: [sharpLayer, onnxruntimeNodeLayer],
+              // layers: [sharpLayer, onnxruntimeNodeLayer, transformersLayer],
               // Exclude bundling it in the Lambda function
               nodejs: {
+                // format: 'cjs',
                 // install: ['sharp', 'onnxruntime-node'],
                 esbuild: {
-                  external: [
-                    'sharp',
-                    'onnxruntime-node',
-                    '@xenova/transformers',
-                  ],
+                  // external: ['sharp'],
+                  external: ['sharp', 'onnxruntime-node'],
+                  // format: 'cjs',
                 },
               },
             },

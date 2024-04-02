@@ -1,6 +1,5 @@
 import { SSTConfig } from 'sst'
-import { NextjsSite, Api } from 'sst/constructs'
-import * as lambda from 'aws-cdk-lib/aws-lambda'
+import { NextjsSite, Api, Function } from 'sst/constructs'
 
 const DOMAIN_NAME = 'promises.skry.be'
 const API_DOMAIN_NAME = 'api.promises.skry.be'
@@ -36,26 +35,17 @@ export default {
       })
     })
     // Adding a new stack for the Lambda function with layers
-    app.stack(function MyFunctionWithLayers({ stack }) {
-      const sharpLayer = new lambda.LayerVersion(stack, 'SharpLayer', {
-        code: lambda.Code.fromAsset('sst/layers/sharp'),
+    app.stack(function SearchFunctionWithDockerizedML({ stack }) {
+      const handler = new Function(stack, 'SearchFunction', {
+        runtime: 'container',
+        handler: 'sst/functions',
+        memorySize: '3 GB',
+        // important if you're on M1 Mac
+        architecture: 'arm_64',
+        container: {
+          cmd: ['search.handler'],
+        },
       })
-
-      const onnxruntimeNodeLayer = new lambda.LayerVersion(
-        stack,
-        'OnnxRuntimeNodeLayer',
-        {
-          code: lambda.Code.fromAsset('sst/layers/onnxruntime-node'),
-        }
-      )
-
-      // const transformersLayer = new lambda.LayerVersion(
-      //   stack,
-      //   'TransformersLayer',
-      //   {
-      //     code: lambda.Code.fromAsset('sst/layers/transformers'),
-      //   }
-      // )
 
       // Create a HTTP API
       const api = new Api(stack, 'Api', {
@@ -65,26 +55,7 @@ export default {
         },
         routes: {
           'POST /search': {
-            function: {
-              handler: 'sst/functions/search.handler',
-              // Use 18.x here because in 14, 16 layers have some issue with using NODE_PATH
-              runtime: 'nodejs18.x',
-              architecture: 'arm_64',
-              // Load dependencies in layers
-              // layers: [sharpLayer],
-              layers: [sharpLayer, onnxruntimeNodeLayer],
-              // layers: [sharpLayer, onnxruntimeNodeLayer, transformersLayer],
-              // Exclude bundling it in the Lambda function
-              nodejs: {
-                // format: 'cjs',
-                // install: ['sharp', 'onnxruntime-node'],
-                esbuild: {
-                  // external: ['sharp'],
-                  external: ['sharp', 'onnxruntime-node'],
-                  // format: 'cjs',
-                },
-              },
-            },
+            function: handler,
           },
         },
       })

@@ -1,3 +1,4 @@
+# from https://www.npmjs.com/package/aws-lambda-ric?activeTab=readme#creating-a-docker-image-for-lambda-with-the-runtime-interface-client
 # Define custom function directory
 ARG FUNCTION_DIR="/function"
 
